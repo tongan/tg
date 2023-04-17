@@ -1,0 +1,93 @@
+<?php return array (
+  'abort_install_on_vehicle_fail' => true,
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '4528d9a82a5c7da6f4d89da0cd008c02' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnBeforeManagerLogin","priority":0,"propertyset":0}',
+        'guid' => '22be7cc8229dcfaab894dc003d155d78',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnBeforeManagerLogin',
+        ),
+        'signature' => '4635684d8f119bb0d53af974cd48029e',
+      ),
+      '3166815a0fae358128352499ef0f8b7d' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnManagerLoginFormRender","priority":0,"propertyset":0}',
+        'guid' => '6df43f1cd4927fa35872f60ec00812a5',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnManagerLoginFormRender',
+        ),
+        'signature' => 'f53fc3ab1317a7ea8b90afe18895de3c',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'captcha',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"captcha-3.3.4-pl\\/modPlugin\\/83a654e3e00de3beddadc1fc40b75622\\/0\\/","target":"return MODX_ASSETS_PATH . \'\\/components\\/\';","name":"captcha"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"captcha-3.3.4-pl\\/modPlugin\\/83a654e3e00de3beddadc1fc40b75622\\/1\\/","target":"return MODX_CORE_PATH . \'\\/components\\/\';","name":"captcha"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"captcha-3.3.4-pl\\/modPlugin\\/83a654e3e00de3beddadc1fc40b75622.preinstall.script.validator","name":"preinstall.script"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1bf578aae4ecd12bcf93a465640a69c3',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '83a654e3e00de3beddadc1fc40b75622',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"Captcha","description":"<b>3.3.4captcha-pl<\\/b> CAPTCHA Plugin","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Captcha plugin\\n *\\n * Copyright 2011-2019 Bob Ray\\n *\\n * @author Bob Ray\\n * @editor Shaun McCormick <shaun@collabpad.com>\\n * @created 09\\/23\\/2008\\n * 1\\/17\\/11\\n *\\n * Captcha is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * Captcha is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * Captcha; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package captcha\\n *\\/\\n\\n\\/**\\n * MODX Captcha plugin\\n *\\n * Description: Captcha plugin for MODX login verification\\n * Events: OnBeforeManagerLogin, OnManagerLoginFormRender\\n *\\n * @package captcha\\n *\\n * @property\\n *\\/\\n\\/* @var $modx modX *\\/\\nswitch ($modx->event->name) {\\n    case \'OnBeforeManagerLogin\': \\/* register only for backend *\\/\\n        $rt = true;\\n        $modx->lexicon->load(\'captcha:default\');\\n        if ($modx->getOption(\'captcha.enabled\', null, false)) {\\n            if (!isset ($_SESSION[\'veriword\'])) {\\n                $rt = \'$_SESSION Variable not set\';\\n            } else {\\n                if ($_SESSION[\'veriword\'] != $_POST[\'captcha_code\']) {\\n                    \\/*$rt = \\"Debug: No Match: SESSION:\\".$_SESSION[\'veriword\'].\\" captcha_code:\\".$_POST[\'captcha_code\']; *\\/\\n                    if ($modx->getOption(\'captcha.use_mathstring\', null, true)) {\\n                        $rt = $modx->lexicon(\'login_mathstring_error\');\\n                    } else {\\n                        $rt = $modx->lexicon(\'login_captcha_error\');\\n                    }\\n                }\\n            }\\n        }\\n\\n        $modx->event->_output = $rt;\\n        break;\\n\\n    case \'OnManagerLoginFormRender\': \\/* register only for backend *\\/\\n        $rt = \'\';\\n\\n        if ($modx->getOption(\'captcha.enabled\', null, false)) {\\n            $modx->lexicon->load(\'captcha:default\');\\n            if ($modx->getOption(\'captcha.use_mathstring\', null, true)) {\\n                $alt = $modx->lexicon(\'login_mathstring_message\');\\n            } else {\\n                $alt = $modx->lexicon(\'login_captcha_message\');\\n            }\\n\\n            $captcha_image = \'<a href=\\"\' . $_SERVER[\'PHP_SELF\'] . \'\\" class=\\"loginCaptcha\\"><img src=\\"\' .\\n                $modx->getOption(\'site_url\') . \'assets\\/components\\/captcha\\/captcha.php?rand=\' . rand() .\\n                \'\\" alt=\\"\' . $alt . \'\\" \\/><\\/a>\';\\n\\n            if ($modx->getOption(\'captcha_use_mathstring\', null, true)) {\\n                $captcha_prompt = \'<p>\' . $modx->lexicon(\\"login_mathstring_message\\") . \'<\\/p>\';\\n                $captcha_input = \'<br \\/><br \\/><label>\' . $modx->lexicon(\\"captcha_mathstring_code\\") .\\n                    \': <input type=\\"text\\" name=\\"captcha_code\\" value=\\"\\" \\/><\\/label>\';\\n            } else {\\n                $captcha_prompt = \'<p>\' . $modx->lexicon(\\"login_captcha_message\\") . \'<\\/p>\';\\n                $captcha_input = \'<br \\/><br \\/><label>\' . $modx->lexicon(\\"captcha_code\\") .\\n                    \': <input type=\\"text\\" name=\\"captcha_code\\" value=\\"\\" \\/><\\/label>\';\\n            }\\n\\n            $rt = \'<hr \\/>\' . $captcha_prompt . $captcha_image . $captcha_input;\\n        }\\n\\n        $modx->event->_output = $rt;\\n        break;\\n}\\n\\nreturn \'\';","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Captcha plugin\\n *\\n * Copyright 2011-2019 Bob Ray\\n *\\n * @author Bob Ray\\n * @editor Shaun McCormick <shaun@collabpad.com>\\n * @created 09\\/23\\/2008\\n * 1\\/17\\/11\\n *\\n * Captcha is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * Captcha is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * Captcha; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package captcha\\n *\\/\\n\\n\\/**\\n * MODX Captcha plugin\\n *\\n * Description: Captcha plugin for MODX login verification\\n * Events: OnBeforeManagerLogin, OnManagerLoginFormRender\\n *\\n * @package captcha\\n *\\n * @property\\n *\\/\\n\\/* @var $modx modX *\\/\\nswitch ($modx->event->name) {\\n    case \'OnBeforeManagerLogin\': \\/* register only for backend *\\/\\n        $rt = true;\\n        $modx->lexicon->load(\'captcha:default\');\\n        if ($modx->getOption(\'captcha.enabled\', null, false)) {\\n            if (!isset ($_SESSION[\'veriword\'])) {\\n                $rt = \'$_SESSION Variable not set\';\\n            } else {\\n                if ($_SESSION[\'veriword\'] != $_POST[\'captcha_code\']) {\\n                    \\/*$rt = \\"Debug: No Match: SESSION:\\".$_SESSION[\'veriword\'].\\" captcha_code:\\".$_POST[\'captcha_code\']; *\\/\\n                    if ($modx->getOption(\'captcha.use_mathstring\', null, true)) {\\n                        $rt = $modx->lexicon(\'login_mathstring_error\');\\n                    } else {\\n                        $rt = $modx->lexicon(\'login_captcha_error\');\\n                    }\\n                }\\n            }\\n        }\\n\\n        $modx->event->_output = $rt;\\n        break;\\n\\n    case \'OnManagerLoginFormRender\': \\/* register only for backend *\\/\\n        $rt = \'\';\\n\\n        if ($modx->getOption(\'captcha.enabled\', null, false)) {\\n            $modx->lexicon->load(\'captcha:default\');\\n            if ($modx->getOption(\'captcha.use_mathstring\', null, true)) {\\n                $alt = $modx->lexicon(\'login_mathstring_message\');\\n            } else {\\n                $alt = $modx->lexicon(\'login_captcha_message\');\\n            }\\n\\n            $captcha_image = \'<a href=\\"\' . $_SERVER[\'PHP_SELF\'] . \'\\" class=\\"loginCaptcha\\"><img src=\\"\' .\\n                $modx->getOption(\'site_url\') . \'assets\\/components\\/captcha\\/captcha.php?rand=\' . rand() .\\n                \'\\" alt=\\"\' . $alt . \'\\" \\/><\\/a>\';\\n\\n            if ($modx->getOption(\'captcha_use_mathstring\', null, true)) {\\n                $captcha_prompt = \'<p>\' . $modx->lexicon(\\"login_mathstring_message\\") . \'<\\/p>\';\\n                $captcha_input = \'<br \\/><br \\/><label>\' . $modx->lexicon(\\"captcha_mathstring_code\\") .\\n                    \': <input type=\\"text\\" name=\\"captcha_code\\" value=\\"\\" \\/><\\/label>\';\\n            } else {\\n                $captcha_prompt = \'<p>\' . $modx->lexicon(\\"login_captcha_message\\") . \'<\\/p>\';\\n                $captcha_input = \'<br \\/><br \\/><label>\' . $modx->lexicon(\\"captcha_code\\") .\\n                    \': <input type=\\"text\\" name=\\"captcha_code\\" value=\\"\\" \\/><\\/label>\';\\n            }\\n\\n            $rt = \'<hr \\/>\' . $captcha_prompt . $captcha_image . $captcha_input;\\n        }\\n\\n        $modx->event->_output = $rt;\\n        break;\\n}\\n\\nreturn \'\';"}',
+);

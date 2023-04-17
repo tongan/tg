@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a309705bde295ffb02da20eaaf69890a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd8713f60886d317281a64788089f4547',
+  'native_key' => 'xhtml_urls',
+  'object' => '{"key":"xhtml_urls","value":true,"xtype":"combo-boolean","namespace":"core","area":"site","editedon":null}',
+);

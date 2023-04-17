@@ -1,0 +1,112 @@
+FormDataManager - 1.4.0.pl
+==========================
+New Bulk Export tab to list previous compressed files and download / remove these.
+Fixes to pagination on multi-page lists.
+New system setting for optional Formit context column in grid list.
+Local sort columns on Formz / Formit grids.
+
+1.3.16.pl
+=========================
+Fixed problem with FormIt & Formz list processors when filter set.
+Changed to list in form name sequence.
+
+1.3.15.pl
+---------
+New functionality - bulk export options for Formz & Formit layouts.
+Additional system setting for export file location.
+
+1.3.14.pl
+---------
+Fixed bugs in proocessor create / update classes checking on wrong id's.
+
+1.3.13.pl
+---------
+Added system settings to enable more control over functionality of this extra.
+
+1.3.12.pl
+---------
+Added optional output functions to standard layouts.
+
+1.2.11.pl
+---------
+View/Export processors changed to use output functions on tables.
+
+1.3.10.pl
+--------
+New feature for layouts mapped to a template to add optional output functions (see snippet fdmViewExportFunctions) to set values using function.
+Changed formit/formz data list processors to get excluded 'inactive' records even if set as NULL (following upgrade 1.3+).
+
+1.3.9.pl
+--------
+Able to set formz/formit forms as inactive.
+Add filters to formit & formz grids for active/inactive forms.
+Improved grid processors to correctly count active/inactive when multiple pages.
+
+1.3.8.pl
+--------
+Fixed occurances of popup Windows to reuse rather than create many duplicates.
+Update snippet & model class to a provide ZipArchive option to combine multiple exports into an archive to download.
+
+1.3.1.pl -> 1.3.7.pl
+--------------------
+Fixed all display/export dates to use system date format settings.
+Created a snippet for use by a schedule process (e.g. scheduler or CRON job) to export all forms since last export.
+Autoexport dates set correctly.
+Fixed sort order when using a template.
+Improved date handling.
+Moved all processors to \mgr\ sub-folder.
+
+1.3.0.pl
+--------
+New feature to define export templates i.e. a standard layout for various forms.
+Changed all flat file processors to classes.
+Fixed typo. in home class.
+Changed grid data retrieval processors for pagination.
+
+1.2.3.pl
+--------
+Added facility to include dummy columns in export format, these can have user defined column names and default values.
+Removed paging on layout definition to prevent loss of changes when paging required.
+
+1.2.2.pl
+--------
+Added feature to set the layout field type (text,textarea,date,number).
+Changed view data grid to enable horizontal scrolling and column changes to make viewing data easier.
+Column widths in view data grid sized according to field type.
+Added check on returning to home page to go to last referenced tab.
+New option to define a date field to be used for export date range for Custom Tables.
+Improved export routine do correctly select records and output JSON data for CSV.
+
+1.2.1.pl
+--------
+Added inline buttons to grids to improve UX.
+Updated lexicon file to clarify some text.
+
+1.2.0.pl
+--------
+Added new functionality for Custom Data Tables.
+Improved data view/export paging.
+
+1.1.0.pl
+--------
+Release version
+
+1.0.3
+-----
+Added functionality to define layout and view/export data saved for FormIt forms using FormItFormSave hook.
+
+1.0.2
+-----
+Use last date exported as default start date for next export.
+Some tidying.
+
+1.0.1
+-----
+Changed home grid to show more useful data
+Update last exported date
+
+1.0.0
+-----
+
+- First release
+

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'cliche',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4ecb52b135a4011726e2c328a8e2c7c0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5f28db685b26295d35e17157ed4a2cc2',
+  'native_key' => 'cliche.upload_size_limit',
+  'object' => '{"key":"cliche.upload_size_limit","value":0,"xtype":"textfield","namespace":"cliche","area":"Cliche Uploader","editedon":null}',
+);

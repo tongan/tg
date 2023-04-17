@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e2125e7ab7d3654600ad4e2f85a71fe9',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '6441d9aded92b488118431ac0c5871cb',
+  'native_key' => 1,
+  'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Extend modUser","longtitle":"","description":"","alias":"extend-moduser","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"[[!ClassExtender?\\r\\n    &package=`extendeduser`\\r\\n    &schemaTpl=`MyExtUserSchema`\\r\\n    &class=`extUser`\\r\\n    &parentObject=`modUser`\\r\\n    &tablePrefix=`ext_`\\r\\n    &tableName=`user_data`\\r\\n    &dirPermission=`0755`\\r\\n]]\\r\\n","richtext":0,"template":0,"menuindex":0,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":1,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

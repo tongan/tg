@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '5554b9023e018cca2a710734f3436671',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '8b14702c87ffa5f8a2b55f2690beacb7',
+  'native_key' => 'manager_use_fullname',
+  'object' => '{"key":"manager_use_fullname","value":false,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

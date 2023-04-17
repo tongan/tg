@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f488caaf34b7b3bf284af940678739f3',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '456598fe05cc4eb6a67756c672bc083b',
+  'native_key' => 'use_editor',
+  'object' => '{"key":"use_editor","value":true,"xtype":"combo-boolean","namespace":"core","area":"editor","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formdatamanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a3c5c9af81822292ba374f89a6314fb3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '174cccd3372d5a74b62c0333c7ea4054',
+  'native_key' => 'fdm_show_formit_context',
+  'object' => '{"key":"fdm_show_formit_context","value":"0","xtype":"combo-boolean","namespace":"formdatamanager","area":"formdatamanager","editedon":null}',
+);

@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '3f626d6efc9cbc8af2132c2fe8b556f8',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '5558a1435ef445edbbac78c825a3654c',
+  'native_key' => 3,
+  'object' => '{"id":3,"name":"Load Only","description":"policy_load_only_desc","parent":0,"template":0,"class":"","data":"{\\"load\\":true}","lexicon":"permissions"}',
+);

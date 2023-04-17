@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '38f3027e84a644a3f016ba7300adcd64',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '4c04b29459d46af410bca14c151fc15e',
+  'native_key' => 10,
+  'object' => '{"id":10,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender Set User Placeholders","longtitle":"","description":"","alias":"class-extender-set-user-placeholders","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"\\r\\n<div class=\\"set_user_placeholders\\">\\r\\n    <h3>Set User Placeholders<\\/h3>\\r\\n\\r\\n    [[!SetUserPlaceholders?\\r\\n        &cssFile =`[[++assets_url]]components\\/classextender\\/css\\/classextender.css`\\r\\n    ]]\\r\\n\\r\\n    <ul>\\r\\n        <li>username: [[+username]]<\\/li>\\r\\n        <li>username: [[+email]]<\\/li>\\r\\n        <li>First: [[+firstName]]<\\/li>\\r\\n        <li>Last: [[+lastName]]<\\/li>\\r\\n        <li>Title: [[+title]]<\\/li>\\r\\n        <li>Company: [[+company]]<\\/li>\\r\\n    <\\/ul>\\r\\n<\\/div>\\r\\n","richtext":0,"template":0,"menuindex":5,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

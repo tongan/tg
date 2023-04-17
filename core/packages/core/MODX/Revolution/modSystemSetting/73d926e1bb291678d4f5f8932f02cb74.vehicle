@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'eb32339959679cd84bcce32a52fce37f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '73d926e1bb291678d4f5f8932f02cb74',
+  'native_key' => 'error_log_filename',
+  'object' => '{"key":"error_log_filename","value":"error.log","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

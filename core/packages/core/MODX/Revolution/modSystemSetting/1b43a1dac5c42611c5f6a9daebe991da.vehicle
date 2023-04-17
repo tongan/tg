@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '1206117aacd60cec2ac15548801a5105',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '1b43a1dac5c42611c5f6a9daebe991da',
+  'native_key' => 'default_username',
+  'object' => '{"key":"default_username","value":"(anonymous)","xtype":"textfield","namespace":"core","area":"session","editedon":null}',
+);

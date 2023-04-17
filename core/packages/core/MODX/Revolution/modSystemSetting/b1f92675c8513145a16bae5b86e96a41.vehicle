@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9d53f99cb171d81b0b04a1f4f1a91efe',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'b1f92675c8513145a16bae5b86e96a41',
+  'native_key' => 'main_nav_parent',
+  'object' => '{"key":"main_nav_parent","value":"topnav","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

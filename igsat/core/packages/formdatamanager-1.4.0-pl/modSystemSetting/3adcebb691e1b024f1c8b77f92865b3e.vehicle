@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formdatamanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8622ec2db8173a2451e5d49578edade9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3adcebb691e1b024f1c8b77f92865b3e',
+  'native_key' => 'fdm_allow_autoexports',
+  'object' => '{"key":"fdm_allow_autoexports","value":"0","xtype":"combo-boolean","namespace":"formdatamanager","area":"formdatamanager","editedon":null}',
+);

@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '6eddfd2ccc23e7fcfe4b56debf4bfa49' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"cliche","controller":"index","haslayout":1,"lang_topics":"cliche:mgr","assets":"","help_url":"","parent":0}',
+        'guid' => 'ec885076ac0842feddc89e47ecb4efe4',
+        'native_key' => 1,
+        'signature' => '787deba9cb908f243e1d60ff9a2c4143',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'cliche',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'aee9e4b57d907a1ce424986bd64a8bd8',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'd5ffce9baf2acb9b871616e265716ef5',
+  'native_key' => 'cliche',
+  'object' => '{"text":"cliche","parent":"components","action":1,"description":"cliche.menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":""}',
+);

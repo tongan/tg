@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'fe7c7e06628be3661d903c1c3a7ff40f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '4912ac9394ead2aac9eb0e8fbc589a63',
+  'native_key' => 'syncsite_default',
+  'object' => '{"key":"syncsite_default","value":true,"xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

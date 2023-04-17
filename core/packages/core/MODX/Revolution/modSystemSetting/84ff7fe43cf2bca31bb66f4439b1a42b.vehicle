@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'f7a5b4c9d8f8e9da31177febbcefeee1',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '84ff7fe43cf2bca31bb66f4439b1a42b',
+  'native_key' => 'cache_resource_clear_partial',
+  'object' => '{"key":"cache_resource_clear_partial","value":false,"xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

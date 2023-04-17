@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'cliche',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1068341b395481967ff5fbac0045561c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '86748d9eced4ca8f65c712778db3ccaa',
+  'native_key' => 'cliche.upload_allowed_extensions',
+  'object' => '{"key":"cliche.upload_allowed_extensions","value":"jpg,jpeg,gif,png,zip","xtype":"textfield","namespace":"cliche","area":"Cliche Uploader","editedon":null}',
+);

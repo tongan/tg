@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd27e6ed442038672be2eb01e8c074a59',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '0f6a49110e5ce9697709bbc643bd5081',
+  'native_key' => 'clear_cache_refresh_trees',
+  'object' => '{"key":"clear_cache_refresh_trees","value":false,"xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

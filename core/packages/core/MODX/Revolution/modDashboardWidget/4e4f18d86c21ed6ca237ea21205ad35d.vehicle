@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'e9933b0d2b1a0139cc2d9219eb4e9907',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modDashboardWidget',
+  'signature' => '4e4f18d86c21ed6ca237ea21205ad35d',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"w_configcheck","description":"w_configcheck_desc","type":"file","content":"[[++manager_path]]controllers\\/default\\/dashboard\\/widget.configcheck.php","properties":null,"namespace":"core","lexicon":"core:dashboards","size":"full","permission":""}',
+);

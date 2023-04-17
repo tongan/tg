@@ -1,0 +1,82 @@
+<p>This utility provides <a href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA</a> verification in the MODX
+Manager login and elsewhere.</p>
+
+
+
+<p>Captcha uses the following System Settings:</p>
+
+<table class="properties">
+    <tr>
+        <th>Setting</th>
+        <th>Usage</th>
+    </tr>
+    <tr>
+        <td>captcha.enabled</td>
+        <td>If set, CAPTCHA is used for Manager login (off when installed)</td>
+    </tr>
+    <tr>
+        <td>captcha.use_mathstring</td>
+        <td>If set, the image is a simple equation for the user to solve (on when installed)</td>
+    </tr>
+    <tr>
+        <td>captcha.words</td>
+        <td>Selection of words used for the image if captcha_use_mathstring is off</td>
+    </tr>
+    <tr>
+        <td>captcha.height</td>
+        <td>Height of image (default: 80)</td>
+    </tr>
+    <tr>
+        <td>captcha.width</td>
+        <td>Width of image (default: 200)</td>
+    </tr>
+    <tr>
+        <td>captcha.words</td>
+        <td>Words to use in CAPTCHA challenge</td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+<p>I recommend leaving the <code>captcha.use_mathstring</code> setting on. Bots have broken regular CAPTCHA images and they are no longer very secure. The mathstring option is much more difficult for them to get through.</p>
+
+<p>You may add or delete fonts from the <code>core/components/captcha/fonts</code> directory
+as long as there is at least one .ttf file there.</p>
+
+<p>You may add or delete images from the <code>core/components/captcha/noise</code> directory
+as long as there is at least one file there.</p>
+
+<div class="box">
+    <p><b>Locked out of the Manager by Captcha?</b></p>
+
+    <p>If for any reason Captcha locks you out of the Manager. You can disable it with these actions:</p>
+    <ul>
+        <li>In the database, edit the <code>modx_site_plugins</code> table.</li>
+        <li>Click on the &quot;name&quot; field heading to sort by plugin name.</li>
+        <li>Edit the Captcha plugin record and set the <code>disabled</code> field to <code>1</code>.</li>
+        <li>Click on the &quot;Go&quot; button.<br></li>
+
+        <li>Also in the database, edit the <code>modx_system_settings</code> table.</li>
+        <li>Click on the &quot;key&quot; field heading to sort the list.</li>
+        <li>Edit the <code>captcha.enabled</code> record and set the value to <code>0</code>.</li>
+        <li>Click on the &quot;Go&quot; button.<br></li>
+
+        <li>In File Manager, delete all files in the <code>core/cache</code> directory.</li>
+    </ul>
+
+    <p>At this point, you should be able to log in to the MODX Manager.</p>
+
+
+
+</div>
+
+<p>Captcha can also be used in other login forms that require captcha.</p>
+
+<p>You can roll your own function by placing the code below where you want the CAPTCHA image to appear and then, when processing the form, comparing the user's input to the <code>$_SESSION['veriword']</code> variable.</p>
+
+<pre class="brush: php; toolbar: false;"><fixedpre>
+<img src="[[++assets_path]]components/captcha/captcha.php" alt="Captcha Image" />
+</fixedpre></pre>
+
+<p>See the code in the <code>core/components/captcha/captcha.plugin.php</code> file.</p>
+
+<p>&nbsp;</p>

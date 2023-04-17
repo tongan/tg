@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formdatamanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '462c3c585c21a82527dffad1261def85',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '53abacdece0fabf6bf80400c1547a054',
+  'native_key' => 'fdm_formit_lookup_history_count',
+  'object' => '{"key":"fdm_formit_lookup_history_count","value":"10","xtype":"textfield","namespace":"formdatamanager","area":"formdatamanager","editedon":null}',
+);

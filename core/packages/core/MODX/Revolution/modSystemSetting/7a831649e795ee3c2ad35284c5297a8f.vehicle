@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'c7cc0fdc895f036f9f5eecc63c1359d3',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '7a831649e795ee3c2ad35284c5297a8f',
+  'native_key' => 'global_duplicate_uri_check',
+  'object' => '{"key":"global_duplicate_uri_check","value":false,"xtype":"combo-boolean","namespace":"core","area":"furls","editedon":null}',
+);

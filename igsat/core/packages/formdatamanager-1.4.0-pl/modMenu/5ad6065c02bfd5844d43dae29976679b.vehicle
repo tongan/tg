@@ -1,0 +1,23 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'namespace' => 'formdatamanager',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"formdatamanager-1.4.0-pl\\/modMenu\\/5ad6065c02bfd5844d43dae29976679b.tables.resolver.resolver","type":"php","name":"tables.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '941f4206bab343a893fae5ae622d65ec',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '5ad6065c02bfd5844d43dae29976679b',
+  'native_key' => 'formdatamanager',
+  'object' => '{"text":"formdatamanager","parent":"components","action":"home","description":"formdatamanager_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"formdatamanager"}',
+);

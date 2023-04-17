@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '7da779f7ef629b5595a6516eb5113dce',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'e76d0566251925c5efc2773b381a42e8',
+  'native_key' => 'upload_images',
+  'object' => '{"key":"upload_images","value":"jpg,jpeg,png,gif,psd,ico,bmp,tiff,svg,svgz,webp","xtype":"textfield","namespace":"core","area":"file","editedon":null}',
+);

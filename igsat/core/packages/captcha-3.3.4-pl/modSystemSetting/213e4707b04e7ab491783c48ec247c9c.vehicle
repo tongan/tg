@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'captcha',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '854b448980707cff616e8d9f009daba5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '213e4707b04e7ab491783c48ec247c9c',
+  'native_key' => 'captcha.words',
+  'object' => '{"key":"captcha.words","value":"Ack,Arps,Alag,Atex,Bek,Bux,Chux,Caxt,Depp,Dex,Ext,Enya,Fet,Fets,Tek,Text,Gurk,Gex,Het,Heft,Unet,Ibex,Jax,Jerp,Jenk,Lak,Lest,Lev,Mars,Mamp,Nex,Nelp,Paxt,Pex,Reks,Rux,Snix,Sept,Turp,Thix,Elps,Vux,Veks,Wect,Wex,Yap,Yef,Yeff,Zub,Zeks","xtype":"textarea","namespace":"captcha","area":"captcha","editedon":null}',
+);

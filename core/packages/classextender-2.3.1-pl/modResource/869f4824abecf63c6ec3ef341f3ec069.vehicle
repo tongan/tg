@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f1b1a9a55dc8c40034fb320a3ac51d00',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '869f4824abecf63c6ec3ef341f3ec069',
+  'native_key' => 7,
+  'object' => '{"id":7,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender GetExtUsers","longtitle":"","description":"","alias":"class-extender-getextusers","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<!--\\r\\nUses Chunks:\\r\\n    extUserInnerTpl\\r\\n    extUserInnerTpl\\r\\n    extUserRowTpl\\r\\n-->\\r\\n\\r\\n<h3>GetExtUsers<\\/h3>\\r\\n\\r\\n<div class=\\"get_ext_users\\">\\r\\n[[!GetExtUsers?\\r\\n    &extUserOuterTpl=`extUserOuterTpl`\\r\\n    &extUserInnerTpl=`extUserInnerTpl`\\r\\n    &extUserRowTpl=`extUserRowTpl`\\r\\n    &sortby=`username`\\r\\n    &sortdir=`ASC`\\r\\n    &limit=`0`\\r\\n    &offset=`0`\\r\\n    &where=`{active:1}`\\r\\n    &cssFile =`[[++assets_url]]components\\/classextender\\/css\\/classextender.css`\\r\\n]]\\r\\n<\\/div>","richtext":0,"template":0,"menuindex":2,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

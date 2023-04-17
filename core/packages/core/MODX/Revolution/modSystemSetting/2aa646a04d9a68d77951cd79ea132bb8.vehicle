@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd0c8ce522674bdc7be837187a66fe95b',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '2aa646a04d9a68d77951cd79ea132bb8',
+  'native_key' => 'friendly_urls_strict',
+  'object' => '{"key":"friendly_urls_strict","value":false,"xtype":"combo-boolean","namespace":"core","area":"furls","editedon":null}',
+);

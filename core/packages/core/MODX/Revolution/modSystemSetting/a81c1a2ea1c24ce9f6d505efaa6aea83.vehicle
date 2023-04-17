@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b1aa8c98e81ab37a2678e7e521b86326',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'a81c1a2ea1c24ce9f6d505efaa6aea83',
+  'native_key' => 'form_customization_use_all_groups',
+  'object' => '{"key":"form_customization_use_all_groups","value":false,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

@@ -1,0 +1,242 @@
+<?php return array (
+  'unique_key' => 'category',
+  'update_object' => true,
+  'preserve_keys' => false,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '7af538d376a5069d4b274ff22a0ec4db' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"Breadcrumb","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[BreadCrumb?\\n\\t&containerTpl=`Breadcrumb.containerTpl`\\n]]\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"[[BreadCrumb?\\n\\t&containerTpl=`Breadcrumb.containerTpl`\\n]]\\n"}',
+        'guid' => '94484a12aa9c338086ba2f0624bc6922',
+        'native_key' => 1,
+        'signature' => '7c5f1c5c15d8640046f235508c5ea087',
+      ),
+      'eb95e014d7764562f5556a4a7c0d8d38' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"Breadcrumb.containerTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<ol class=\\"breadcrumb\\">\\n\\t[[+crumbs]]\\n<\\/ol>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<ol class=\\"breadcrumb\\">\\n\\t[[+crumbs]]\\n<\\/ol>\\n"}',
+        'guid' => '914a6afdb41a326a233607c1a177bf35',
+        'native_key' => 2,
+        'signature' => '8ca8d8525375d2b7f38cadc9f19d0d20',
+      ),
+      '8ded634182282be4a2a85f1e71a5da9d' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"name":"Footer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"footer\\">\\n\\t<div class=\\"container\\">\\n\\t\\t<p class=\\"text-muted\\">&copy; [[++site_name]] [[Years]]\\n\\t\\t\\t<a href=\\"http:\\/\\/modx.com\\/extras\\/package\\/bootstrap\\" target=\\"_blank\\" class=\\"pull-right\\"><small>Bootstrap 1.0.29-pl<\\/small><\\/a>\\n\\t\\t<\\/p>\\n\\t<\\/div>\\n<\\/div>\\n\\n<!-- Include all compiled plugins (below), or include individual files as needed -->\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/dist\\/js\\/bootstrap.min.js\\"><\\/script>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div id=\\"footer\\">\\n\\t<div class=\\"container\\">\\n\\t\\t<p class=\\"text-muted\\">&copy; [[++site_name]] [[Years]]\\n\\t\\t\\t<a href=\\"http:\\/\\/modx.com\\/extras\\/package\\/bootstrap\\" target=\\"_blank\\" class=\\"pull-right\\"><small>Bootstrap 1.0.29-pl<\\/small><\\/a>\\n\\t\\t<\\/p>\\n\\t<\\/div>\\n<\\/div>\\n\\n<!-- Include all compiled plugins (below), or include individual files as needed -->\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/dist\\/js\\/bootstrap.min.js\\"><\\/script>\\n"}',
+        'guid' => '58aeed2b3f623e5815cc65fe7e829015',
+        'native_key' => 3,
+        'signature' => 'f58416bffa2bb8f8e574188cbda37c00',
+      ),
+      '65dcd6a225427b6f06dfbbe46eb60c53' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":4,"source":0,"property_preprocess":0,"name":"Head","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<meta charset=\\"[[++modx_charset]]\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\n<title>[[++site_name]] - [[*pagetitle]]<\\/title>\\n<meta name=\\"description\\" content=\\"[[*description]]\\"\\/>\\n<link rel=\\"shortcut icon\\" href=\\"\\/favicon.ico\\" type=\\"image\\/x-icon\\" \\/>\\n<!-- Bootstrap -->\\n<link href=\\"[[++assets_url]]components\\/bootstrap\\/dist\\/css\\/bootstrap.min.css\\" rel=\\"stylesheet\\" media=\\"screen\\">\\n<link href=\\"[[++assets_url]]templates\\/bootstrap\\/css\\/style.css\\" rel=\\"stylesheet\\" media=\\"screen\\">\\n[[If? \\n    &subject=`[[++bootstrap.dropdown_disabled]]`\\n\\t&operand=`1`\\n\\t&then=`<style type=\\"text\\/css\\">\\nul.nav li.dropdown:hover > ul.dropdown-menu {\\n    display: block;    \\n}\\n<\\/style>`]]\\n<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/jquery.js\\"><\\/script>\\n<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->\\n<!--[if lt IE 9]>\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/html5shiv.js\\"><\\/script>\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/respond.min.js\\"><\\/script>\\n<![endif]-->\\n<base href=\\"[[!++site_url]]\\" \\/>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<meta charset=\\"[[++modx_charset]]\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">\\n<title>[[++site_name]] - [[*pagetitle]]<\\/title>\\n<meta name=\\"description\\" content=\\"[[*description]]\\"\\/>\\n<link rel=\\"shortcut icon\\" href=\\"\\/favicon.ico\\" type=\\"image\\/x-icon\\" \\/>\\n<!-- Bootstrap -->\\n<link href=\\"[[++assets_url]]components\\/bootstrap\\/dist\\/css\\/bootstrap.min.css\\" rel=\\"stylesheet\\" media=\\"screen\\">\\n<link href=\\"[[++assets_url]]templates\\/bootstrap\\/css\\/style.css\\" rel=\\"stylesheet\\" media=\\"screen\\">\\n[[If? \\n    &subject=`[[++bootstrap.dropdown_disabled]]`\\n\\t&operand=`1`\\n\\t&then=`<style type=\\"text\\/css\\">\\nul.nav li.dropdown:hover > ul.dropdown-menu {\\n    display: block;    \\n}\\n<\\/style>`]]\\n<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/jquery.js\\"><\\/script>\\n<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->\\n<!--[if lt IE 9]>\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/html5shiv.js\\"><\\/script>\\n<script src=\\"[[++assets_url]]components\\/bootstrap\\/vendor\\/js\\/respond.min.js\\"><\\/script>\\n<![endif]-->\\n<base href=\\"[[!++site_url]]\\" \\/>\\n"}',
+        'guid' => '909de3dd528feb5e311e3a744fbddebb',
+        'native_key' => 4,
+        'signature' => 'ab964714c96c9b72ca838880ba05f62a',
+      ),
+      'ddc222252d98be3ff2e7e35962f8e76d' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":5,"source":0,"property_preprocess":0,"name":"Navbar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"navbar navbar-inverse navbar-fixed-top\\" role=\\"navigation\\">\\n  <div class=\\"container\\">\\n\\t<div class=\\"navbar-header\\">\\n\\t  <button type=\\"button\\" class=\\"navbar-toggle\\" data-toggle=\\"collapse\\" data-target=\\".navbar-collapse\\">\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t  <\\/button>\\n\\t  <a class=\\"navbar-brand\\" href=\\"[[++site_url]]\\">[[++site_name]]<\\/a>\\n\\t<\\/div>\\n\\t<div class=\\"collapse navbar-collapse\\">\\n\\t  [[Wayfinder?\\n\\t\\t&startId=`0`\\n\\t\\t&level=`2`\\n\\t\\t&outerTpl=`Wayfinder.outerTpl`\\n\\t\\t&innerTpl=`Wayfinder.innerTpl`\\n\\t\\t&parentRowTpl=`Wayfinder.parentRowTpl`\\n\\t\\t&innerRowTpl=`Wayfinder.innerRowTpl`\\n\\t\\t&rowTpl=`Wayfinder.rowTpl`                    \\n\\t  ]]\\n\\t<\\/div><!--\\/.nav-collapse -->\\n  <\\/div>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div class=\\"navbar navbar-inverse navbar-fixed-top\\" role=\\"navigation\\">\\n  <div class=\\"container\\">\\n\\t<div class=\\"navbar-header\\">\\n\\t  <button type=\\"button\\" class=\\"navbar-toggle\\" data-toggle=\\"collapse\\" data-target=\\".navbar-collapse\\">\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t\\t<span class=\\"icon-bar\\"><\\/span>\\n\\t  <\\/button>\\n\\t  <a class=\\"navbar-brand\\" href=\\"[[++site_url]]\\">[[++site_name]]<\\/a>\\n\\t<\\/div>\\n\\t<div class=\\"collapse navbar-collapse\\">\\n\\t  [[Wayfinder?\\n\\t\\t&startId=`0`\\n\\t\\t&level=`2`\\n\\t\\t&outerTpl=`Wayfinder.outerTpl`\\n\\t\\t&innerTpl=`Wayfinder.innerTpl`\\n\\t\\t&parentRowTpl=`Wayfinder.parentRowTpl`\\n\\t\\t&innerRowTpl=`Wayfinder.innerRowTpl`\\n\\t\\t&rowTpl=`Wayfinder.rowTpl`                    \\n\\t  ]]\\n\\t<\\/div><!--\\/.nav-collapse -->\\n  <\\/div>\\n<\\/div>\\n"}',
+        'guid' => '1a2cfb2fb5a04697634085551b07ed31',
+        'native_key' => 5,
+        'signature' => '1990b61d1d9cd94844cfd8598c70f882',
+      ),
+      'f2c38b1a2cafcebb4b6133b189246c18' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":6,"source":0,"property_preprocess":0,"name":"Sidebar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"well sidebar-nav\\">\\n\\t  [[Wayfinder?\\n\\t\\t&startId=`[[*id]]`\\n\\t\\t&level=`2`\\n\\t\\t&outerTpl=`Wayfinder.Sidebar.outerTpl`\\n\\t\\t&innerTpl=`Wayfinder.Sidebar.innerTpl`\\n\\t\\t&innerRowTpl=`Wayfinder.Sidebar.innerRowTpl`\\n\\t  ]]\\n<\\/div><!--\\/.well -->\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div class=\\"well sidebar-nav\\">\\n\\t  [[Wayfinder?\\n\\t\\t&startId=`[[*id]]`\\n\\t\\t&level=`2`\\n\\t\\t&outerTpl=`Wayfinder.Sidebar.outerTpl`\\n\\t\\t&innerTpl=`Wayfinder.Sidebar.innerTpl`\\n\\t\\t&innerRowTpl=`Wayfinder.Sidebar.innerRowTpl`\\n\\t  ]]\\n<\\/div><!--\\/.well -->\\n"}',
+        'guid' => '5580aa70f7308332f49e7231ecf9e763',
+        'native_key' => 6,
+        'signature' => '89dbe3d08f80f1928ec19e7805edb3f1',
+      ),
+      '41cd62c839123e28042b35de44bce436' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":7,"source":0,"property_preprocess":0,"name":"Wayfinder.innerRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => '892cf3e531ddcd6401d64ad5a4cb624a',
+        'native_key' => 7,
+        'signature' => '44849f83e1f61c40fb9e38324934c668',
+      ),
+      '29e969009d15911329b09d41f9a584f1' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":8,"source":0,"property_preprocess":0,"name":"Wayfinder.innerTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<ul class=\\"dropdown-menu\\">\\n\\t[[+wf.wrapper]]\\n<\\/ul>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<ul class=\\"dropdown-menu\\">\\n\\t[[+wf.wrapper]]\\n<\\/ul>\\n"}',
+        'guid' => '1ec0e498839895ec15c5406145ca2ead',
+        'native_key' => 8,
+        'signature' => '5f2022b00da65544b201aa3e7efd91f2',
+      ),
+      '0a33c376475b4a32d177580f62fcf430' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":9,"source":0,"property_preprocess":0,"name":"Wayfinder.outerTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<ul class=\\"nav navbar-nav\\">\\n\\t[[+wf.wrapper]]\\n<\\/ul>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<ul class=\\"nav navbar-nav\\">\\n\\t[[+wf.wrapper]]\\n<\\/ul>\\n"}',
+        'guid' => '1d52d670a33128af8febc1a4a5ef7a38',
+        'native_key' => 9,
+        'signature' => '54b8d6c615e1b563e3fda0acedcc3f6d',
+      ),
+      '0cbb6289ca99843632acae8be36490d3' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":10,"source":0,"property_preprocess":0,"name":"Wayfinder.parentRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li class=\\"[[+wf.classnames]] dropdown\\">\\n\\t<a href=\\"[[If? &subject=`[[++bootstrap.dropdown_disabled]]` &operand=`1` &then=`[[+wf.link]]` &else=`#`]]\\" title=\\"[[+wf.title]]\\" class=\\"dropdown-toggle [[If? &subject=`[[++bootstrap.dropdown_disabled]]` &operand=`1` &then=`disabled`]]\\" data-toggle=\\"dropdown\\" [[+wf.attributes]]>\\n\\t\\t[[+wf.linktext]] \\n\\t\\t<b class=\\"caret\\"><\\/b>\\n\\t<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li class=\\"[[+wf.classnames]] dropdown\\">\\n\\t<a href=\\"[[If? &subject=`[[++bootstrap.dropdown_disabled]]` &operand=`1` &then=`[[+wf.link]]` &else=`#`]]\\" title=\\"[[+wf.title]]\\" class=\\"dropdown-toggle [[If? &subject=`[[++bootstrap.dropdown_disabled]]` &operand=`1` &then=`disabled`]]\\" data-toggle=\\"dropdown\\" [[+wf.attributes]]>\\n\\t\\t[[+wf.linktext]] \\n\\t\\t<b class=\\"caret\\"><\\/b>\\n\\t<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => 'cf816da85da19d689d430008e889b3d7',
+        'native_key' => 10,
+        'signature' => '53e6a21fc6a0a5484f7c1740571d952b',
+      ),
+      '6ec78fb57f952e658222b322c46d5b16' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":11,"source":0,"property_preprocess":0,"name":"Wayfinder.rowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => '1f73f879bec8ec2398aded2683883897',
+        'native_key' => 11,
+        'signature' => '44444ea73a6e23bc68a68d4b3ea15455',
+      ),
+      'b79d862ed0973b4b39bfc6ccc9e50edf' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modChunk',
+        'object' => '{"id":12,"source":0,"property_preprocess":0,"name":"Wayfinder.Sidebar.innerRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]><small>[[+wf.linktext]]<\\/small><\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]><small>[[+wf.linktext]]<\\/small><\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => 'c752677b3509d0f4d6c3553bf799b225',
+        'native_key' => 12,
+        'signature' => '1e0b696ef5567b8977f4e4ad7d98b175',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '84b280e40824b5ccaf7ec07690bc589e' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => true,
+        'preserve_keys' => false,
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"Years","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * Years snippet\\n *\\n * @package Bootstrap\\n *\\/\\nreturn date(\'Y\');","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Years snippet\\n *\\n * @package Bootstrap\\n *\\/\\nreturn date(\'Y\');"}',
+        'guid' => '78fb54b72b751a21c33fe1477dc36f27',
+        'native_key' => 1,
+        'signature' => '888cbe04ea672ff1ef54d6779a3c6973',
+      ),
+      'bf3ece86c901ee58a50fa47f471997ef' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => true,
+        'preserve_keys' => false,
+        'class' => 'modSnippet',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"RenderBreadcrumbs","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * RenderBreadcrumbs snippet\\n *\\n * @package Bootstrap\\n *\\/\\n$ids = $modx->getParentIds($modx->resource->id);\\nreturn isset($ids[0]) && $ids[0] == 0 ? 0 : 1;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * RenderBreadcrumbs snippet\\n *\\n * @package Bootstrap\\n *\\/\\n$ids = $modx->getParentIds($modx->resource->id);\\nreturn isset($ids[0]) && $ids[0] == 0 ? 0 : 1;"}',
+        'guid' => 'acfc10a6deeaa3e5eab8939b6d087de1',
+        'native_key' => 2,
+        'signature' => 'a01e38a701d19f2282494a3d8b74d0d5',
+      ),
+      '48e0657de9f358e6ff92d99edf9b915e' => 
+      array (
+        'unique_key' => 'name',
+        'update_object' => true,
+        'preserve_keys' => false,
+        'class' => 'modSnippet',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"name":"RenderSidebar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * RenderSidebar snippet\\n *\\n * @package Bootstrap\\n *\\/\\nreturn $modx->getCount(\'modResource\', array(\\n    \'parent\' => $modx->resource->id,\\n    \'deleted\' => false,\\n    \'hidemenu\' => false,\\n    \'published\' => true\\n));","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * RenderSidebar snippet\\n *\\n * @package Bootstrap\\n *\\/\\nreturn $modx->getCount(\'modResource\', array(\\n    \'parent\' => $modx->resource->id,\\n    \'deleted\' => false,\\n    \'hidemenu\' => false,\\n    \'published\' => true\\n));"}',
+        'guid' => 'dc5eb895494cc8de5de3c264f5098f7f',
+        'native_key' => 3,
+        'signature' => '6da2c6cc59a118b52358a2e83ee4f4c6',
+      ),
+    ),
+    'Templates' => 
+    array (
+      '9c07b7c849ed5f35ce1219277cdc9ef5' => 
+      array (
+        'unique_key' => 'templatename',
+        'update_object' => false,
+        'preserve_keys' => false,
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"templatename":"BootstrapTemplate","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html>\\n<html lang=\\"[[++cultureKey]]\\">\\n\\t<head>\\n\\t\\t[[$Head]]\\n\\t<\\/head>\\n\\t<body>\\n\\t\\t[[$Navbar]]\\n\\t\\t<div class=\\"container\\">\\n\\t\\t[[!If?\\n\\t\\t\\t&subject=`[[RenderBreadcrumbs]]`\\n\\t\\t\\t&operator=`!empty`\\n\\t\\t\\t&then=`[[$Breadcrumb]]`\\n\\t\\t]]\\n\\t\\t[[If?\\n\\t\\t\\t&subject=`[[*longtitle]]`\\n\\t\\t\\t&operator=`!empty`\\n\\t\\t\\t&then=`<div class=\\"page-header\\">\\n\\t\\t\\t\\t<h1>[[*longtitle]]<\\/h1>\\n\\t\\t\\t<\\/div>`\\n\\t\\t]]\\n\\t\\t[[!If?\\n\\t\\t\\t&subject=`[[RenderSidebar]]`\\n\\t\\t\\t&operator=`!empty`\\n\\t\\t\\t&then=`<div class=\\"row\\">\\n\\t\\t\\t\\t<div class=\\"col-md-2 sidebar-offcanvas\\" id=\\"sidebar\\" role=\\"navigation\\">\\n\\t\\t\\t\\t\\t[[$Sidebar]]\\n\\t\\t\\t\\t<\\/div>\\n\\t\\t\\t\\t<div class=\\"col-md-10\\">\\n\\t\\t\\t\\t\\t[[*content]]\\n\\t\\t\\t\\t<\\/div>\\n\\t\\t\\t<\\/div>`\\n\\t\\t\\t&else=`[[*content]]`\\n\\t\\t]]\\n\\t\\t<\\/div>\\n\\t\\t[[$Footer]]\\n\\t<\\/body>\\n<\\/html>\\n","locked":0,"properties":null,"static":0,"static_file":""}',
+        'guid' => 'c920a8842ebdf9da5cd086d9f2b29c19',
+        'native_key' => 1,
+        'signature' => 'f524645a15e5c4449bd4b8453578e601',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Templates' => 
+    array (
+      'unique_key' => 'templatename',
+      'update_object' => false,
+      'preserve_keys' => false,
+    ),
+    'Chunks' => 
+    array (
+      'unique_key' => 'name',
+      'update_object' => false,
+      'preserve_keys' => false,
+    ),
+    'Snippets' => 
+    array (
+      'unique_key' => 'name',
+      'update_object' => true,
+      'preserve_keys' => false,
+    ),
+  ),
+  'namespace' => 'bootstrap',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"bootstrap-1.0.29-pl\\/modCategory\\/5733d0e4ca239da503fef38cc8326fcb\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"bootstrap"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"bootstrap-1.0.29-pl\\/modCategory\\/5733d0e4ca239da503fef38cc8326fcb\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"bootstrap"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"bootstrap-1.0.29-pl\\/modCategory\\/5733d0e4ca239da503fef38cc8326fcb\\/2\\/","target":"return MODX_ASSETS_PATH . \'templates\\/\';","name":"bootstrap"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '360df8aea9815856112d58edc24e2918',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '5733d0e4ca239da503fef38cc8326fcb',
+  'native_key' => 0,
+  'object' => '{"id":0,"parent":0,"category":"Bootstrap","rank":0}',
+);

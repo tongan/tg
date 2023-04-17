@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '8498d35a497de7bf2abda6c00704d882',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '047b86047efb0ccc5a715ff27f3dc413',
+  'native_key' => 'cache_expires',
+  'object' => '{"key":"cache_expires","value":0,"xtype":"numberfield","namespace":"core","area":"caching","editedon":null}',
+);

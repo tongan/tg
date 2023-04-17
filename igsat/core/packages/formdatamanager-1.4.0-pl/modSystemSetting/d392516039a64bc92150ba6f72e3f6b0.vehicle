@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'formdatamanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f46a3037b1b7b6656c2d2877d02e6022',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd392516039a64bc92150ba6f72e3f6b0',
+  'native_key' => 'fdm_export_folder_path',
+  'object' => '{"key":"fdm_export_folder_path","value":"{core_path}export\\/FormDataManager\\/","xtype":"textfield","namespace":"formdatamanager","area":"formdatamanager","editedon":null}',
+);

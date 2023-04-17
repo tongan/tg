@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '414c5378525539f4f316ecf503f473b2',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '2b621d4782172cae24119d81b21246ca',
+  'native_key' => 9,
+  'object' => '{"id":9,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender Set Resource Placeholders","longtitle":"","description":"","alias":"class-extender-set-resource-placeholders","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<!-- Will only show extra fields data on pages where the extended fields are set!\\r\\n     Set them by editing this page to test. -->\\r\\n\\r\\n[[!SetResourcePlaceholders?\\r\\n    &cssFile =`[[++assets_url]]components\\/classextender\\/css\\/classextender.css`\\r\\n]]\\r\\n\\r\\n\\r\\n<div class=\\"set_resource_placeholders\\">\\r\\n    <h3>Fields<\\/h3>\\r\\n    <ul>\\r\\n        <li>Pagetitle: [[+pagetitle]]<\\/li>\\r\\n        <li>alias: [[+alias]]<\\/li>\\r\\n        <li>Name: [[+name]]<\\/li>\\r\\n        <li>Color: [[+color]]<\\/li>\\r\\n        <li>Breed: [[+breed]]<\\/li>\\r\\n        <li>Age: [[+age]]<\\/li>\\r\\n    <\\/ul>\\r\\n<\\/div>\\r\\n\\r\\n","richtext":0,"template":0,"menuindex":4,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

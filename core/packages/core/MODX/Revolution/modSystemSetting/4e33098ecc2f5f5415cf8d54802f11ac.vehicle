@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9f6f5352baad56ad694a18e576e7878f',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '4e33098ecc2f5f5415cf8d54802f11ac',
+  'native_key' => 'feed_modx_news_enabled',
+  'object' => '{"key":"feed_modx_news_enabled","value":true,"xtype":"combo-boolean","namespace":"core","area":"system","editedon":null}',
+);

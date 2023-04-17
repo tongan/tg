@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ajaxupload',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e940ce198e835c45ec3ce58659e85e2a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a47650ee0e8dd85fa67f1b4d99082c73',
+  'native_key' => 'ajaxupload.debug',
+  'object' => '{"key":"ajaxupload.debug","value":"0","xtype":"combo-boolean","namespace":"ajaxupload","area":"system","editedon":null}',
+);

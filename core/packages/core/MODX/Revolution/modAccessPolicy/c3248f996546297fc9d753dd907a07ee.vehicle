@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'fb1171dd9a4939d47f36a11f545e1232',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => 'c3248f996546297fc9d753dd907a07ee',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Resource","description":"policy_resource_desc","parent":0,"template":0,"class":"","data":"{\\"add_children\\":true,\\"create\\":true,\\"copy\\":true,\\"delete\\":true,\\"list\\":true,\\"load\\":true,\\"move\\":true,\\"publish\\":true,\\"remove\\":true,\\"save\\":true,\\"steal_lock\\":true,\\"undelete\\":true,\\"unpublish\\":true,\\"view\\":true}","lexicon":"permissions"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ajaxupload',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd96c51135c71e4df1bafeb69166e65b8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '675f3733571f144f80dff6fa3ad3146d',
+  'native_key' => 'ajaxupload.cache_expires',
+  'object' => '{"key":"ajaxupload.cache_expires","value":"4","xtype":"textfield","namespace":"ajaxupload","area":"site","editedon":null}',
+);

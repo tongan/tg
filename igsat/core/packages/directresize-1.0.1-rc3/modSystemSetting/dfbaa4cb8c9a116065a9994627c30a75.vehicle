@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'directresize',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0034d535262e4f7437bccdf442578b3d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'dfbaa4cb8c9a116065a9994627c30a75',
+  'native_key' => 'directresize.size_rule',
+  'object' => '{"key":"directresize.size_rule","value":"0","xtype":"textfield","namespace":"directresize","area":"directresize","editedon":null}',
+);

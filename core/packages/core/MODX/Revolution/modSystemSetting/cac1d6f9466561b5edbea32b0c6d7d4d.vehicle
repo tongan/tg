@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '4d69d06da6792ef99534934f1a068c19',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'cac1d6f9466561b5edbea32b0c6d7d4d',
+  'native_key' => 'modx_browser_tree_hide_tooltips',
+  'object' => '{"key":"modx_browser_tree_hide_tooltips","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

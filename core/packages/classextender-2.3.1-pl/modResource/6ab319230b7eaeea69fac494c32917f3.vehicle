@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd20bf93ecb260aadfd7101589b548dd6',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '6ab319230b7eaeea69fac494c32917f3',
+  'native_key' => 8,
+  'object' => '{"id":8,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender GetExtResources","longtitle":"","description":"","alias":"class-extender-getextresources","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<!--\\r\\nWill only find resources that have been\\r\\nsaved with the extra fields.\\r\\n\\r\\nUses Chunks:\\r\\n    extResourceInnerTpl\\r\\n    extResourceInnerTpl\\r\\n    extResourceRowTpl\\r\\n-->\\r\\n\\r\\n<h3>GetExtResources<\\/h3>\\r\\n\\r\\n<div id=\\"get_ext_resources\\" class=\\"get_ext_resources\\">\\r\\n[[!GetExtResources?\\r\\n    &extResourceOuterTpl=`extResourceOuterTpl`\\r\\n    &extResourceInnerTpl=`extResourceInnerTpl`\\r\\n    &extResourceRowTpl=`extResourceRowTpl`\\r\\n    &sortby=`pagetitle`\\r\\n    &sortdir=`ASC`\\r\\n    &limit=`0`\\r\\n    &offset=`0`\\r\\n    &where=`{published:1,deleted:0}`\\r\\n    &cssFile =`[[++assets_url]]components\\/classextender\\/css\\/classextender.css`\\r\\n]]\\r\\n<\\/div>","richtext":0,"template":0,"menuindex":3,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

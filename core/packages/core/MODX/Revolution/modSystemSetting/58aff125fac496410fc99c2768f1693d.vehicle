@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9b92736d3dd021f66ca0c812feb09b17',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '58aff125fac496410fc99c2768f1693d',
+  'native_key' => 'blocked_minutes',
+  'object' => '{"key":"blocked_minutes","value":60,"xtype":"numberfield","namespace":"core","area":"authentication","editedon":null}',
+);

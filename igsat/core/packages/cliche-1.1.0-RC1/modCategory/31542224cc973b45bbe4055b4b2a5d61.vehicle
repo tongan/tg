@@ -1,0 +1,335 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '6180117421597ac66c95d6ffddd99bcf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Cliche","description":"Browse your albums from a single call","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\r\\n * Snippet Cliche\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$view = $modx->getOption(\'view\', $_REQUEST, $modx->getOption(\'view\', $scriptProperties, null));\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$controllerName = ($view != null) ?  ucfirst($view) : \'Albums\';\\r\\n$scriptProperties[\'view\'] = strtolower($controllerName);\\r\\n\\r\\n$controller = $Cliche->loadController($controllerName);\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\r\\n * Snippet Cliche\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$view = $modx->getOption(\'view\', $_REQUEST, $modx->getOption(\'view\', $scriptProperties, null));\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$controllerName = ($view != null) ?  ucfirst($view) : \'Albums\';\\r\\n$scriptProperties[\'view\'] = strtolower($controllerName);\\r\\n\\r\\n$controller = $Cliche->loadController($controllerName);\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;"}',
+        'guid' => '3b19e134889af798906ac16d79711bcc',
+        'native_key' => 0,
+        'signature' => 'fcf7421d0dd9f2d160a2c3be1a4535a8',
+      ),
+      'ce69a98ebe0b84b63ac6ac9afbe9dd7b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"ClicheAlbum","description":"Browse a specific album","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\r\\n * Snippet Cliche\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$scriptProperties[\'view\'] = \'Album\';\\r\\n\\r\\n$controller = $Cliche->loadController(\'Album\');\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\r\\n * Snippet Cliche\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$scriptProperties[\'view\'] = \'Album\';\\r\\n\\r\\n$controller = $Cliche->loadController(\'Album\');\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;"}',
+        'guid' => 'f963c470d4eb8af9292bf5bd03ee0f73',
+        'native_key' => 1,
+        'signature' => '156661276b03ecaafe57af92303a15b8',
+      ),
+      'b21dff96154d72d8c5b89f738d14ea00' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"ClicheImage","description":"View a single image","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\r\\n * Snippet ClicheImage\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$scriptProperties[\'view\'] = strtolower(\'Image\');\\r\\n\\r\\n$controller = $Cliche->loadController(\'Image\');\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\r\\n * Snippet ClicheImage\\r\\n *\\r\\n * @package cliche\\r\\n *\\/\\r\\n \\/**\\r\\n * Cliche\\r\\n *\\r\\n * A Gallery manager components for MODx Revolution\\r\\n *\\r\\n * @author Stephane Boulard <lossendae@gmail.com>\\r\\n * @package cliche\\r\\n *\\/\\r\\n $Cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($Cliche instanceof Cliche)) return \'Cliche could not be loaded\';\\r\\n$scriptProperties[\'plugin\'] = $modx->getOption(\'plugin\', $scriptProperties, \'default\');\\r\\n$scriptProperties[\'view\'] = strtolower(\'Image\');\\r\\n\\r\\n$controller = $Cliche->loadController(\'Image\');\\r\\n$output = $controller->run($scriptProperties);\\r\\nreturn $output;"}',
+        'guid' => 'b69d8429d68576adf083e0482a34ee62',
+        'native_key' => 2,
+        'signature' => 'ca2c6407fdfcf6366cfd1d09f2180a52',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'b5fa8da427b7c4c50d18a2a9460ec191' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '9d7468570c1fac2c960cadac0bbdd313' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => 'f079c9aba86adbea440b6bb0292dc6f8',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => '4b61cfd017f02270d3dad28b02688847',
+            ),
+            '1e3bba0ac5c5fca81f92fb813b0033c3' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '98c335b3e552c27088d160b67fddaa5d',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => 'c74ac1afcfc6c218838b53878d23c4e6',
+            ),
+            '7e43f3ec3dd65bbae830ebff3ca3d297' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderList","priority":0,"propertyset":0}',
+              'guid' => '0a15ba89894ac79d913da466771d51ab',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderList',
+              ),
+              'signature' => '0f4ae2aa28ea0a6419059b84510dcaf2',
+            ),
+            'bfb1005cb4dc89528655c2bca113f048' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderPropertiesList","priority":0,"propertyset":0}',
+              'guid' => 'e0809eebe8db83478e16cbb4ae76e3e4',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderPropertiesList',
+              ),
+              'signature' => 'b7e379dab333d139ff51f0fdd476e268',
+            ),
+            '484e7106c8c83157d142f6918804fa84' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+              'guid' => 'cd2e33e6de824135245e9b2e7f98856a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormPrerender',
+              ),
+              'signature' => 'd5bab2c40e65800527caa16bde47c954',
+            ),
+            '2692da87e788e4176e6f07643effd497' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTemplateVarSave","priority":0,"propertyset":0}',
+              'guid' => '3ed13a865aba44360014923a7ef7ee6a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTemplateVarSave',
+              ),
+              'signature' => '536d5bbbbd424c52dc54ae3ba4b77a0f',
+            ),
+            '6f5a3c3c55a1bed1a9d3db0ad66f5bf3' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTemplateVarBeforeRemove","priority":0,"propertyset":0}',
+              'guid' => '55f3900628073e1600efd5baafd8f991',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTemplateVarBeforeRemove',
+              ),
+              'signature' => '87c02110f35c6042636b7556f1d40c63',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"ClicheThumbnail","description":"Resource Thumbnail Manager via Cliche 3rd party component","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\r\\n * Handles plugin events for Cliche\'s Custom Thumbnail TV\\r\\n * \\r\\n * @package cliche\\r\\n *\\/\\r\\n$cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($cliche instanceof Cliche)) return \'\';\\r\\n\\r\\n$corePath = $cliche->config[\'core_path\'];\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnDocFormPrerender\':    \\r\\n        $modx->controller->addCss($cliche->config[\'css_url\'].\'index.css\');\\r\\n        $modx->controller->addCss($cliche->config[\'css_url\'].\'clichethumbnail.css\');\\r\\n        \\r\\n         \\/* assign cliche lang to JS *\\/\\r\\n        $modx->controller->addLexiconTopic(\'cliche:mgr\');\\r\\n        $modx->controller->addLexiconTopic(\'cliche:clichethumbnail\');\\r\\n        \\r\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\r\\nExt.onReady(function() {\\r\\n    MODx.ClicheConnectorUrl = \\"\'.$cliche->config[\'connector_url\'].\'\\";\\r\\n    MODx.ClicheAssetsUrl = \\"\'.$cliche->config[\'assets_url\'].\'\\";\\r\\n    MODx.ClicheAssetsPath = \\"\'.$cliche->config[\'assets_path\'].\'\\";\\r\\n    Ext.ux.Lightbox.register(\\"a.lightbox\\");\\r\\n});\\r\\n<\\/script>\');\\r\\n        \\/* Lightbox *\\/\\r\\n        $mgrUrl = $modx->getOption(\'manager_url\',null,MODX_MANAGER_URL);        \\r\\n        $modx->controller->addJavascript($mgrUrl . \'assets\\/modext\\/util\\/lightbox.js\');\\r\\n            \\r\\n        \\/* App base definitions + libs *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/jquery.1.4.min.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/jquery.Jcrop.min.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.html5.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.html4.js\');\\r\\n        \\r\\n        \\/* Core base class *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/core\\/album.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/core\\/upload.js\');\\r\\n            \\r\\n        \\/* TV panel classes *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/panel.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/window.js\');\\r\\n        \\r\\n        \\/* Window cards *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/main.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/album.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/upload.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/cropper.js\');\\r\\n        break;\\r\\n    case \'OnTemplateVarSave\':\\r\\n        $type = $templateVar->get(\'type\');\\r\\n        if($type == \'clichethumbnail\'){\\r\\n            $name = $templateVar->get(\'name\');\\r\\n            $id = $templateVar->get(\'id\');\\r\\n            $properties = $templateVar->getProperties();\\r\\n            \\r\\n            \\/* Get the existing album *\\/            \\r\\n            if($mode == \'upd\' && isset($properties[\'clichealbum\'])){                    \\r\\n                $album = $modx->getObject(\'ClicheAlbums\', $properties[\'clichealbum\']);                        \\r\\n            }     \\r\\n            \\/* Prevents album duplication *\\/\\r\\n            if($mode == \'upd\' && !$album){                                    \\r\\n                $album = $modx->getObject(\'ClicheAlbums\', array(\'description\'=> \'Cliche Thumbnail TV - #\' . $id));    \\r\\n                if($album){\\r\\n                    $properties[\'clichealbum\'] = $album->get(\'id\');\\r\\n                    $templateVar->setProperties(array(\'clichealbum\' => $properties[\'clichealbum\']), true);\\r\\n                    $templateVar->save();\\r\\n                }\\r\\n            }         \\r\\n            \\r\\n            \\/* Else create a new Cliche album *\\/\\r\\n            if(!$album){\\r\\n                $album = $modx->newObject(\'ClicheAlbums\');\\r\\n                $album->set(\'type\', \'clichethumbnail\');\\r\\n                $album->set(\'description\', \'Cliche Thumbnail TV - #\' . $id);\\r\\n            }\\r\\n            \\r\\n            \\/* We have an album *\\/\\r\\n            if($album){                    \\r\\n                $album->set(\'name\', $name);\\r\\n                $album->save();                \\r\\n                if(!isset($properties[\'clichealbum\'])){\\r\\n                    $aid = $album->get(\'id\');\\r\\n                    $templateVar->setProperties(array(\'clichealbum\' => $aid), true);\\r\\n                    $templateVar->save();\\r\\n                }                \\r\\n            }\\r\\n            \\r\\n            unset($album);\\r\\n        }\\r\\n        break;\\r\\n    case \'OnTemplateVarBeforeRemove\':\\r\\n        $type = $templateVar->get(\'type\');\\r\\n        if($type == \'clichethumbnail\'){\\r\\n            $name = $templateVar->get(\'name\');\\r\\n            $properties = $templateVar->getProperties();\\r\\n            if(isset($properties[\'clichealbum\'])){\\r\\n                $album = $modx->getObject(\'ClicheAlbums\', $properties[\'clichealbum\']);    \\r\\n                if($album){\\r\\n                    $album->fromArray(array(\\r\\n                        \'name\' => $name,\\r\\n                        \'type\' => \'default\',\\r\\n                        \'description\' => \'This was a ClicheThumbnail dedicated album whose TV has been removed\',\\r\\n                    ));\\r\\n                    $album->save();\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        break;\\r\\n    default:break;\\r\\n}\\r\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\r\\n * Handles plugin events for Cliche\'s Custom Thumbnail TV\\r\\n * \\r\\n * @package cliche\\r\\n *\\/\\r\\n$cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($cliche instanceof Cliche)) return \'\';\\r\\n\\r\\n$corePath = $cliche->config[\'core_path\'];\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'elements\\/tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnDocFormPrerender\':    \\r\\n        $modx->controller->addCss($cliche->config[\'css_url\'].\'index.css\');\\r\\n        $modx->controller->addCss($cliche->config[\'css_url\'].\'clichethumbnail.css\');\\r\\n        \\r\\n         \\/* assign cliche lang to JS *\\/\\r\\n        $modx->controller->addLexiconTopic(\'cliche:mgr\');\\r\\n        $modx->controller->addLexiconTopic(\'cliche:clichethumbnail\');\\r\\n        \\r\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\r\\nExt.onReady(function() {\\r\\n    MODx.ClicheConnectorUrl = \\"\'.$cliche->config[\'connector_url\'].\'\\";\\r\\n    MODx.ClicheAssetsUrl = \\"\'.$cliche->config[\'assets_url\'].\'\\";\\r\\n    MODx.ClicheAssetsPath = \\"\'.$cliche->config[\'assets_path\'].\'\\";\\r\\n    Ext.ux.Lightbox.register(\\"a.lightbox\\");\\r\\n});\\r\\n<\\/script>\');\\r\\n        \\/* Lightbox *\\/\\r\\n        $mgrUrl = $modx->getOption(\'manager_url\',null,MODX_MANAGER_URL);        \\r\\n        $modx->controller->addJavascript($mgrUrl . \'assets\\/modext\\/util\\/lightbox.js\');\\r\\n            \\r\\n        \\/* App base definitions + libs *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/jquery.1.4.min.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/jquery.Jcrop.min.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.html5.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/libs\\/plupload.html4.js\');\\r\\n        \\r\\n        \\/* Core base class *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/core\\/album.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/core\\/upload.js\');\\r\\n            \\r\\n        \\/* TV panel classes *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/panel.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/window.js\');\\r\\n        \\r\\n        \\/* Window cards *\\/\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/main.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/album.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/upload.js\');\\r\\n        $modx->controller->addJavascript($cliche->config[\'assets_url\'].\'mgr\\/thumbnail\\/tv\\/cards\\/cropper.js\');\\r\\n        break;\\r\\n    case \'OnTemplateVarSave\':\\r\\n        $type = $templateVar->get(\'type\');\\r\\n        if($type == \'clichethumbnail\'){\\r\\n            $name = $templateVar->get(\'name\');\\r\\n            $id = $templateVar->get(\'id\');\\r\\n            $properties = $templateVar->getProperties();\\r\\n            \\r\\n            \\/* Get the existing album *\\/            \\r\\n            if($mode == \'upd\' && isset($properties[\'clichealbum\'])){                    \\r\\n                $album = $modx->getObject(\'ClicheAlbums\', $properties[\'clichealbum\']);                        \\r\\n            }     \\r\\n            \\/* Prevents album duplication *\\/\\r\\n            if($mode == \'upd\' && !$album){                                    \\r\\n                $album = $modx->getObject(\'ClicheAlbums\', array(\'description\'=> \'Cliche Thumbnail TV - #\' . $id));    \\r\\n                if($album){\\r\\n                    $properties[\'clichealbum\'] = $album->get(\'id\');\\r\\n                    $templateVar->setProperties(array(\'clichealbum\' => $properties[\'clichealbum\']), true);\\r\\n                    $templateVar->save();\\r\\n                }\\r\\n            }         \\r\\n            \\r\\n            \\/* Else create a new Cliche album *\\/\\r\\n            if(!$album){\\r\\n                $album = $modx->newObject(\'ClicheAlbums\');\\r\\n                $album->set(\'type\', \'clichethumbnail\');\\r\\n                $album->set(\'description\', \'Cliche Thumbnail TV - #\' . $id);\\r\\n            }\\r\\n            \\r\\n            \\/* We have an album *\\/\\r\\n            if($album){                    \\r\\n                $album->set(\'name\', $name);\\r\\n                $album->save();                \\r\\n                if(!isset($properties[\'clichealbum\'])){\\r\\n                    $aid = $album->get(\'id\');\\r\\n                    $templateVar->setProperties(array(\'clichealbum\' => $aid), true);\\r\\n                    $templateVar->save();\\r\\n                }                \\r\\n            }\\r\\n            \\r\\n            unset($album);\\r\\n        }\\r\\n        break;\\r\\n    case \'OnTemplateVarBeforeRemove\':\\r\\n        $type = $templateVar->get(\'type\');\\r\\n        if($type == \'clichethumbnail\'){\\r\\n            $name = $templateVar->get(\'name\');\\r\\n            $properties = $templateVar->getProperties();\\r\\n            if(isset($properties[\'clichealbum\'])){\\r\\n                $album = $modx->getObject(\'ClicheAlbums\', $properties[\'clichealbum\']);    \\r\\n                if($album){\\r\\n                    $album->fromArray(array(\\r\\n                        \'name\' => $name,\\r\\n                        \'type\' => \'default\',\\r\\n                        \'description\' => \'This was a ClicheThumbnail dedicated album whose TV has been removed\',\\r\\n                    ));\\r\\n                    $album->save();\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        break;\\r\\n    default:break;\\r\\n}\\r\\nreturn;"}',
+        'guid' => '7365a617cb606de5e70bd4c1e696f053',
+        'native_key' => 1,
+        'signature' => '6f3682c6c08080cf341eb94bda2d21f8',
+      ),
+      '992b905835ee671dbe28a18c739e895b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'f1cddaa75a7d455e58ac0f815b581d49' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => '7ad56a13ac9dae778a38a65c5cf8875d',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => '04244551449783c444832a6f1a18b4f0',
+            ),
+            '0fb9e5c8feb83e4266f2a81fc9a65019' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '898823c94723d9f192d35ceab50b50c3',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => '8a2289ba4c5c48b692c8b5cfebe364a8',
+            ),
+            'ef5d458d9f8b6992e14ea9f940d26a8d' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderList","priority":0,"propertyset":0}',
+              'guid' => '0e12eaf99023824d9b63d39606d21d9a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderList',
+              ),
+              'signature' => '9d0da67340a5cbee92f515f905442fad',
+            ),
+            '1d28bc75457337676d2b4ced9ffe92d9' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '4d3b28f10597ef87007e044b21ef665c',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderPropertiesList',
+              ),
+              'signature' => '4f945017d4c360e689d988287f69e7cf',
+            ),
+            'a4d9a0e799e584287dd15da37321d5bb' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => '5fd25c01aae7f2853710b865b8c24762',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => '08cb02ede94bc10b8841095dda3fd5e2',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"ClicheAlbumSelect","description":"TV select of album connected to Resource","editor_type":0,"category":0,"cache_type":0,"plugincode":"$cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($cliche instanceof Cliche)) return \'\';\\r\\n\\r\\n$corePath = $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/cliche\\/elements\\/\';\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVInputPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/inputoptions\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnManagerPageBeforeRender\':\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"$cliche = $modx->getService(\'cliche\',\'Cliche\',$modx->getOption(\'cliche.core_path\',null,$modx->getOption(\'core_path\').\'components\\/cliche\\/\').\'model\\/cliche\\/\',$scriptProperties);\\r\\nif (!($cliche instanceof Cliche)) return \'\';\\r\\n\\r\\n$corePath = $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/cliche\\/elements\\/\';\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnTVInputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/input\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderList\':\\r\\n        $modx->event->output($corePath.\'tv\\/output\\/\');\\r\\n        break;\\r\\n    case \'OnTVInputPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/inputoptions\\/\');\\r\\n        break;\\r\\n    case \'OnTVOutputRenderPropertiesList\':\\r\\n        $modx->event->output($corePath.\'tv\\/properties\\/\');\\r\\n        break;\\r\\n    case \'OnManagerPageBeforeRender\':\\r\\n        break;\\r\\n}"}',
+        'guid' => 'c5d234a4bd03d7cc17d1dce295e34a6e',
+        'native_key' => 2,
+        'signature' => '83c6c1bd02641bbaf7b50fe928e94504',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Plugins' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'cliche',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cliche-1.1.0-RC1\\/modCategory\\/31542224cc973b45bbe4055b4b2a5d61\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"cliche"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cliche-1.1.0-RC1\\/modCategory\\/31542224cc973b45bbe4055b4b2a5d61\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"cliche"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"cliche-1.1.0-RC1\\/modCategory\\/31542224cc973b45bbe4055b4b2a5d61.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"cliche-1.1.0-RC1\\/modCategory\\/31542224cc973b45bbe4055b4b2a5d61.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a453b61a0b2d26f19464a0ee8612d638',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '31542224cc973b45bbe4055b4b2a5d61',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Cliche"}',
+);

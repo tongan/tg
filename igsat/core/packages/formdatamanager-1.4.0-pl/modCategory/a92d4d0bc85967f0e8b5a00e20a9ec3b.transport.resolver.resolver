@@ -1,0 +1,34 @@
+<?php
+/**
+ * Fixes change of processor files location when updating
+ *
+ * @package formdatamanager
+ * @subpackage build
+ */
+if ($object->xpdo) {
+	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_UPGRADE:
+			// Remove old processors as now in /mgr/ sub folder & renamed flat processor files to use classes
+	
+			function rrmdir($dir,$top) { 
+				if (is_dir($dir)) { 
+					$objects = scandir($dir); 
+					foreach ($objects as $object) { 
+						if ($object != "." && $object != ".." && $object != "mgr") { 
+							if (is_dir($dir."/".$object))
+								rrmdir($dir."/".$object,0);
+							else
+								unlink($dir."/".$object); 
+						} 
+					}
+					if (!$top) rmdir($dir); 
+				} 
+			}
+			
+			$path = MODX_CORE_PATH . 'components/formdatamanager/processors/';
+			rrmdir($path,1);
+			break;
+			
+	}
+}
+return true;

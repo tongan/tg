@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'moddevtools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7d2c24ea4991eb1a0feefe6607cdddd0',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '6af50f048e3e807e1ab7175dbf950eb2',
+  'native_key' => 'moddevtools.menu',
+  'object' => '{"text":"moddevtools.menu","parent":"components","action":"home","description":"moddevtools.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"view_chunk,view_template","namespace":"moddevtools"}',
+);

@@ -1,0 +1,67 @@
+Changelog for Cliche
+
+*** Cliche 1.1.0 RC1 ***
+    - New custom TV to connect album directly with resources
+    - Some fixes with uploads and thumbnails
+    - Fix loadCss option
+    - Setting per page count in manager album view
+
+*** Cliche 1.0.1 RC5 ***
+
+    - Added Russian translation
+
+*** Cliche 1.0.1 RC4 ***
+
+    - Fix file extension error with fileuploader
+    - Fix upload size limit (Added system setting to manage them)
+    - Fix chunk override with default front end viewer
+    - Added item zoom option for album if fancybox is activated
+    - Added system setting and setup options
+
+*** Cliche 1.0.1 RC3 ***
+
+    - Fix issue with CSS override
+    - Removed deprecated properties in front end controllers
+    - Fix issue with image browsing when using galleriffic
+
+*** Cliche 1.0.1 RC2 ***
+
+    - Added swedish lexicons (thanks to frostraven)
+    - Fix : Proper columns override in default plugin
+    - Add basic pagination and limit capabilities
+
+*** Cliche 1.0.1 RC1 ***
+
+    - Fix indentation for IDE (OS related)
+    - Set debug mode to false per default
+    
+*** Cliche 1.0.1 beta 3 ***
+
+    - Fix error while loading album when image has not been found
+    - Fix default plugin loader for front end 
+
+*** Cliche 1.0.1 beta 2 ***
+
+    - Fix breacrumbs update to fire only when the panel is visible
+
+*** Cliche 1.0.0 beta 2 ***
+
+    - Added album id informations and description on album cmp panel
+    - Added image edit window
+    - Added search field
+    - Drag and Drop upload
+    - Drag and Drop reorder on album panel
+    - Added Cliche thumbnail Template Variable
+    - Added Gallerific plugin
+    - Added Image preloading mask on cmp
+    - Height auto adjustement for long names to assure proper image alignement on albums/album list panels
+    - Lot of refactor and fixes
+
+*** Cliche 1.0.0 beta 1 ***
+
+    - Refactor for MODx 2.2 (JS & PHP)
+    - Switch from valum fileuploader to PLUpload for better control of upload process
+
+*** Cliche 0.1 ***
+
+    - Initial release

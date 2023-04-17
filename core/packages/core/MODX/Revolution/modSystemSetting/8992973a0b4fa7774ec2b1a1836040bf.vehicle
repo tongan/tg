@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '901f2bed4f033eaeacaeb6d5006dfec0',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '8992973a0b4fa7774ec2b1a1836040bf',
+  'native_key' => 'resource_tree_node_name',
+  'object' => '{"key":"resource_tree_node_name","value":"pagetitle","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

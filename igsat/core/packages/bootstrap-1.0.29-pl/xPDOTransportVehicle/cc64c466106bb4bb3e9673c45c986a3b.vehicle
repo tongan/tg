@@ -1,0 +1,25 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'bootstrap-1.0.29-pl/xPDOTransportVehicle/cc64c466106bb4bb3e9673c45c986a3b/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'breadcrumb-1.4.3-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'bootstrap',
+  'resolve' => NULL,
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"bootstrap-1.0.29-pl\\/xPDOTransportVehicle\\/cc64c466106bb4bb3e9673c45c986a3b.breadcrumb.validator","type":"php","name":"breadcrumb"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '3affc47e9f9ee6cd43ce5a9fba6492d6',
+  'package' => '',
+  'signature' => 'cc64c466106bb4bb3e9673c45c986a3b',
+  'native_key' => '3affc47e9f9ee6cd43ce5a9fba6492d6',
+);

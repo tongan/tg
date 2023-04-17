@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'cffd9e6ffcdb66d48412216985cb1d02',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => 'dd2efac5aabed2a598445f1ad982335c',
+  'native_key' => 'OnManagerPageAfterRender',
+  'object' => '{"name":"OnManagerPageAfterRender","service":2,"groupname":"System"}',
+);

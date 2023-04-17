@@ -1,0 +1,192 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '65b0d4c13208f76e6be30adf0d5b35ee' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplAjaxuploadImage","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"file-wrap\\" data-fileid=\\"[[+fileid]]\\">\\n    <img alt=\\"[[+original]]\\" class=\\"thumb\\" src=\\"[[+thumb]]\\" style=\\"[[+style]]\\" title=\\"[[+original]]\\">\\n    <span class=\\"title\\">[[+originalName]]<\\/span>\\n    <a class=\\"delete-button\\" title=\\"[[%ajaxupload.deleteButton]]\\"><\\/a>\\n<\\/div>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"file-wrap\\" data-fileid=\\"[[+fileid]]\\">\\n    <img alt=\\"[[+original]]\\" class=\\"thumb\\" src=\\"[[+thumb]]\\" style=\\"[[+style]]\\" title=\\"[[+original]]\\">\\n    <span class=\\"title\\">[[+originalName]]<\\/span>\\n    <a class=\\"delete-button\\" title=\\"[[%ajaxupload.deleteButton]]\\"><\\/a>\\n<\\/div>\\n"}',
+        'guid' => 'be3db2f5d3fa94d94528a36e96220fd8',
+        'native_key' => NULL,
+        'signature' => 'c4bdbaddbfacd489bc6e4bba09bfabfe',
+      ),
+      '0f3dc27f70189e411da31e6ce1a245a7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplAjaxuploadScript","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<script type=\\"text\\/javascript\\">\\n    $(document).ready(function () {\\n        $(\'#file-uploader-[[+uid]]\').ajaxUpload({\\n            uploadAction: \'[[+connectorUrl]]\',\\n            uid: \'[[+uid]]\',\\n            dragText: \'[[%ajaxupload.dropArea]]\',\\n            uploadButtonText: \'[[%ajaxupload.uploadButton]]\',\\n            cancelButtonText: \'[[%ajaxupload.cancel]]\',\\n            failUploadText: \'[[%ajaxupload.failed]]\',\\n            deleteText: \'[[%ajaxupload.deleteButton]]\',\\n            clearText: \'[[%ajaxupload.clearButton]]\',\\n            hideShowDropArea: true,\\n            thumbX: \'[[+thumbX]]px\',\\n            thumbY: \'[[+thumbY]]px\',\\n            allowedExtensions: [[+allowedExtensionsString]],\\n            sizeLimit: [[+sizeLimit]],\\n            maxFiles: [[+maxFiles]],\\n            maxConnections: [[+maxConnections]],\\n            messages: {\\n                typeError: \\"[[%ajaxupload.typeError]]\\",\\n                sizeError: \\"[[%ajaxupload.sizeError]]\\",\\n                minSizeError: \\"[[%ajaxupload.minSizeError]]\\",\\n                emptyError: \\"[[%ajaxupload.emptyError]]\\",\\n                onLeave: \\"[[%ajaxupload.onLeave]]\\"\\n            }\\n        });\\n    });\\n<\\/script>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<script type=\\"text\\/javascript\\">\\n    $(document).ready(function () {\\n        $(\'#file-uploader-[[+uid]]\').ajaxUpload({\\n            uploadAction: \'[[+connectorUrl]]\',\\n            uid: \'[[+uid]]\',\\n            dragText: \'[[%ajaxupload.dropArea]]\',\\n            uploadButtonText: \'[[%ajaxupload.uploadButton]]\',\\n            cancelButtonText: \'[[%ajaxupload.cancel]]\',\\n            failUploadText: \'[[%ajaxupload.failed]]\',\\n            deleteText: \'[[%ajaxupload.deleteButton]]\',\\n            clearText: \'[[%ajaxupload.clearButton]]\',\\n            hideShowDropArea: true,\\n            thumbX: \'[[+thumbX]]px\',\\n            thumbY: \'[[+thumbY]]px\',\\n            allowedExtensions: [[+allowedExtensionsString]],\\n            sizeLimit: [[+sizeLimit]],\\n            maxFiles: [[+maxFiles]],\\n            maxConnections: [[+maxConnections]],\\n            messages: {\\n                typeError: \\"[[%ajaxupload.typeError]]\\",\\n                sizeError: \\"[[%ajaxupload.sizeError]]\\",\\n                minSizeError: \\"[[%ajaxupload.minSizeError]]\\",\\n                emptyError: \\"[[%ajaxupload.emptyError]]\\",\\n                onLeave: \\"[[%ajaxupload.onLeave]]\\"\\n            }\\n        });\\n    });\\n<\\/script>"}',
+        'guid' => '943bab926822fa840704d79008f4c514',
+        'native_key' => NULL,
+        'signature' => 'cee596fa92234d72508c47844726a2c4',
+      ),
+      '469bf8aad5b321169ee833016d333c17' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"tplAjaxuploadUploadSection","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"file-uploader-[[+uid]]\\">\\n    <div class=\\"file-uploader-items\\">\\n        [[+items]]\\n    <\\/div>\\n    <div class=\\"file-uploader-buttons\\">\\n        <noscript>\\n            <input name=\\"[[+uid]]\\" type=\\"file\\">\\n        <\\/noscript>\\n    <\\/div>\\n    [[!+fi.error.[[+uid]]]]\\n<\\/div>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div id=\\"file-uploader-[[+uid]]\\">\\n    <div class=\\"file-uploader-items\\">\\n        [[+items]]\\n    <\\/div>\\n    <div class=\\"file-uploader-buttons\\">\\n        <noscript>\\n            <input name=\\"[[+uid]]\\" type=\\"file\\">\\n        <\\/noscript>\\n    <\\/div>\\n    [[!+fi.error.[[+uid]]]]\\n<\\/div>\\n"}',
+        'guid' => 'aeae7ec4b42ef730bf33f6da04eb4574',
+        'native_key' => NULL,
+        'signature' => '0ee493eebf31d24eb0d8a047849bfb14',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'c1757e0cfd6d386c39d99a5f2bd225d3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"AjaxUpload","description":"Show upload button for uploading multiple files with progress-bar","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * AjaxUpload Snippet\\n *\\n * @package ajaxupload\\n * @subpackage snippet\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadSnippet($modx, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet class not found\';","locked":0,"properties":"a:10:{s:3:\\"uid\\";a:7:{s:4:\\"name\\";s:3:\\"uid\\";s:4:\\"desc\\";s:25:\\"ajaxupload.ajaxupload.uid\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"language\\";a:7:{s:4:\\"name\\";s:8:\\"language\\";s:4:\\"desc\\";s:30:\\"ajaxupload.ajaxupload.language\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:17:\\"allowedExtensions\\";a:7:{s:4:\\"name\\";s:17:\\"allowedExtensions\\";s:4:\\"desc\\";s:39:\\"ajaxupload.ajaxupload.allowedExtensions\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:16:\\"jpg,jpeg,png,gif\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"maxFilesizeMb\\";a:7:{s:4:\\"name\\";s:13:\\"maxFilesizeMb\\";s:4:\\"desc\\";s:35:\\"ajaxupload.ajaxupload.maxFilesizeMb\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"8\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"maxFiles\\";a:7:{s:4:\\"name\\";s:8:\\"maxFiles\\";s:4:\\"desc\\";s:30:\\"ajaxupload.ajaxupload.maxFiles\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"3\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"thumbX\\";a:7:{s:4:\\"name\\";s:6:\\"thumbX\\";s:4:\\"desc\\";s:28:\\"ajaxupload.ajaxupload.thumbX\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"100\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"thumbY\\";a:7:{s:4:\\"name\\";s:6:\\"thumbY\\";s:4:\\"desc\\";s:28:\\"ajaxupload.ajaxupload.thumbY\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"100\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"addJquery\\";a:7:{s:4:\\"name\\";s:9:\\"addJquery\\";s:4:\\"desc\\";s:31:\\"ajaxupload.ajaxupload.addJquery\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"addJscript\\";a:7:{s:4:\\"name\\";s:10:\\"addJscript\\";s:4:\\"desc\\";s:32:\\"ajaxupload.ajaxupload.addJscript\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"addCss\\";a:7:{s:4:\\"name\\";s:6:\\"addCss\\";s:4:\\"desc\\";s:28:\\"ajaxupload.ajaxupload.addCss\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * AjaxUpload Snippet\\n *\\n * @package ajaxupload\\n * @subpackage snippet\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadSnippet($modx, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadSnippet class not found\';"}',
+        'guid' => '0dc1db4d3fd301ca3a63c958ae7a7855',
+        'native_key' => NULL,
+        'signature' => 'b2b3f354343da597e1c51bc38b12fb06',
+      ),
+      '197013e5cd628cc916a81d66bb9cfb82' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"AjaxUpload2Formit","description":"AjaxUpload Formit hook. Save the upload queue into Formit field.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * AjaxUpload2Formit\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUpload2FormitHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook class not found\';","locked":0,"properties":"a:6:{s:13:\\"ajaxuploadUid\\";a:7:{s:4:\\"name\\";s:13:\\"ajaxuploadUid\\";s:4:\\"desc\\";s:42:\\"ajaxupload.ajaxupload2formit.ajaxuploadUid\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:19:\\"ajaxuploadFieldname\\";a:7:{s:4:\\"name\\";s:19:\\"ajaxuploadFieldname\\";s:4:\\"desc\\";s:48:\\"ajaxupload.ajaxupload2formit.ajaxuploadFieldname\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:16:\\"ajaxuploadTarget\\";a:7:{s:4:\\"name\\";s:16:\\"ajaxuploadTarget\\";s:4:\\"desc\\";s:45:\\"ajaxupload.ajaxupload2formit.ajaxuploadTarget\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:21:\\"ajaxuploadFieldformat\\";a:7:{s:4:\\"name\\";s:21:\\"ajaxuploadFieldformat\\";s:4:\\"desc\\";s:50:\\"ajaxupload.ajaxupload2formit.ajaxuploadFieldformat\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:32:\\"ajaxupload.formit2ajaxupload.csv\\";s:5:\\"value\\";s:3:\\"csv\\";}i:1;a:2:{s:4:\\"text\\";s:33:\\"ajaxupload.formit2ajaxupload.json\\";s:5:\\"value\\";s:4:\\"json\\";}}s:5:\\"value\\";s:3:\\"csv\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:20:\\"ajaxuploadClearQueue\\";a:7:{s:4:\\"name\\";s:20:\\"ajaxuploadClearQueue\\";s:4:\\"desc\\";s:49:\\"ajaxupload.ajaxupload2formit.ajaxuploadClearQueue\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:24:\\"ajaxuploadAllowOverwrite\\";a:7:{s:4:\\"name\\";s:24:\\"ajaxuploadAllowOverwrite\\";s:4:\\"desc\\";s:53:\\"ajaxupload.ajaxupload2formit.ajaxuploadAllowOverwrite\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * AjaxUpload2Formit\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUpload2FormitHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUpload2FormitHook class not found\';"}',
+        'guid' => '684169bef7e998d40371c5435b7b0c54',
+        'native_key' => NULL,
+        'signature' => '6365cf290e9a96d4c8851fe87526688b',
+      ),
+      '4c709ac6e27ac13a4bda1c68f414c024' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"Formit2AjaxUpload","description":"AjaxUpload Formit preHook. Prefill the upload queue from Formit field.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * Formit2AjaxUpload\\n *\\n * @package ajaxupload\\n * @subpackage prehook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new Formit2AjaxUploadHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook class not found\';","locked":0,"properties":"a:4:{s:13:\\"ajaxuploadUid\\";a:7:{s:4:\\"name\\";s:13:\\"ajaxuploadUid\\";s:4:\\"desc\\";s:42:\\"ajaxupload.formit2ajaxupload.ajaxuploadUid\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:19:\\"ajaxuploadFieldname\\";a:7:{s:4:\\"name\\";s:19:\\"ajaxuploadFieldname\\";s:4:\\"desc\\";s:48:\\"ajaxupload.formit2ajaxupload.ajaxuploadFieldname\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:16:\\"ajaxuploadTarget\\";a:7:{s:4:\\"name\\";s:16:\\"ajaxuploadTarget\\";s:4:\\"desc\\";s:45:\\"ajaxupload.formit2ajaxupload.ajaxuploadTarget\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:21:\\"ajaxuploadFieldformat\\";a:7:{s:4:\\"name\\";s:21:\\"ajaxuploadFieldformat\\";s:4:\\"desc\\";s:50:\\"ajaxupload.formit2ajaxupload.ajaxuploadFieldformat\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:32:\\"ajaxupload.ajaxupload2formit.csv\\";s:5:\\"value\\";s:3:\\"csv\\";}i:1;a:2:{s:4:\\"text\\";s:33:\\"ajaxupload.ajaxupload2formit.json\\";s:5:\\"value\\";s:4:\\"json\\";}}s:5:\\"value\\";s:3:\\"csv\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Formit2AjaxUpload\\n *\\n * @package ajaxupload\\n * @subpackage prehook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new Formit2AjaxUploadHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\Formit2AjaxUploadHook class not found\';"}',
+        'guid' => 'd4377bd0a56d0a4e40ce86c26a4b916c',
+        'native_key' => NULL,
+        'signature' => '9c341a8107b45d61813c334ffe413648',
+      ),
+      '353fec6c331572018cb237e448c4563e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"AjaxUploadAttachments","description":"AjaxUpload Formit hook. Attach the uploaded files to the mail.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * AjaxUploadAttachments\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadAttachmentsHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook class not found\';","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * AjaxUploadAttachments\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadAttachmentsHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadAttachmentsHook class not found\';"}',
+        'guid' => 'd267d3590eda1e5e31fbde4c40873735',
+        'native_key' => NULL,
+        'signature' => '42fef009c8ffa4505d217d5f5b4fe5f0',
+      ),
+      'bc7ee097328256b7f96d337482f5e629' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"AjaxUploadRequired","description":"AjaxUpload Formit hook. Add an error message, when no file is uploaded.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * AjaxUploadRequiredHook\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadRequiredHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook class not found\';","locked":0,"properties":"a:1:{s:25:\\"ajaxuploadRequiredMessage\\";a:7:{s:4:\\"name\\";s:25:\\"ajaxuploadRequiredMessage\\";s:4:\\"desc\\";s:55:\\"ajaxupload.ajaxuploadrequired.ajaxuploadRequiredMessage\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"ajaxupload:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * AjaxUploadRequiredHook\\n *\\n * @package ajaxupload\\n * @subpackage hook\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var fiHooks $hook\\n *\\/\\n\\nuse TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook;\\n\\n$corePath = $modx->getOption(\'ajaxupload.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/ajaxupload\\/\');\\n\\/** @var AjaxUpload $ajaxupload *\\/\\n$ajaxupload = $modx->getService(\'ajaxupload\', \'AjaxUpload\', $corePath . \'model\\/ajaxupload\\/\', [\\n    \'core_path\' => $corePath\\n]);\\n\\n$snippet = new AjaxUploadRequiredHook($modx, $hook, $scriptProperties);\\nif ($snippet instanceof TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook) {\\n    return $snippet->execute();\\n}\\nreturn \'TreehillStudio\\\\AjaxUpload\\\\Snippets\\\\AjaxUploadRequiredHook class not found\';"}',
+        'guid' => '333fa57a03766641ca2080cec6005795',
+        'native_key' => NULL,
+        'signature' => 'be2ab8e6cb4c27c1fa4fad0734b0a10a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'ajaxupload',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ajaxupload-1.6.4-pl\\/modCategory\\/9823b0f2ecf2344da46d20f0ea39e662\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"ajaxupload"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ajaxupload-1.6.4-pl\\/modCategory\\/9823b0f2ecf2344da46d20f0ea39e662\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"ajaxupload"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ajaxupload-1.6.4-pl\\/modCategory\\/9823b0f2ecf2344da46d20f0ea39e662.resolve.cleanup.resolver","type":"php","name":"resolve.cleanup"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ajaxupload-1.6.4-pl\\/modCategory\\/9823b0f2ecf2344da46d20f0ea39e662.resolve.treehillstudio.resolver","type":"php","name":"resolve.treehillstudio"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd5686a038aa1f46f005ba2121bfe75b6',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '9823b0f2ecf2344da46d20f0ea39e662',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"AjaxUpload","rank":0}',
+);

@@ -1,0 +1,86 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '7595633b05223cdfa48105650838d31a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"fdmExportTask","description":"FormDataManager helper snippet to export form data.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n * fdmExportTask \\n *\\n * FormDataManager\\n *\\/\\n\\n\\/\\/ Check this functionality allowed - system setting\\n\\n$allowed = $this->modx->getOption(\'fdm_allow_autoexports\',null,0);\\nif (!$allowed) {\\n    echo \\"<html><title>FormDataManger Error<\\/title><body><h1>Permission Error<\\/h1><p>The FormDataManger auto export function is unavailable.<\\/p><\\/body><\\/html>\\";\\n    exit();\\n}\\n\\n\\/\\/ Load Class\\n\\nif (!isset($scriptProperties)) $scriptProperties = array();\\n$fdm = $modx->getService(\'formdatamanager\', \'FormDataManager\', $modx->getOption(\'formdatamanager.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/formdatamanager\\/\') . \'model\\/formdatamanager\\/\', $scriptProperties);\\nif (!($fdm instanceof FormDataManager)) return \'\';\\n\\n$opt = (isset($fdmRunOpts)) ? trim($fdmRunOpts) : \\"\\";\\nswitch ($opt) {\\n    case \\"-zip\\":\\n        $fdm->createZip();\\n        break;\\n    case \\"-rar\\":\\n        $fdm->createRar();\\n        break;\\n    default:\\n        \\n}\\n\\nif (!empty($opt)) return;\\n\\n$processorsPath = $modx->getOption(\'core_path\', null, MODX_CORE_PATH) .\'components\\/formdatamanager\\/processors\\/\';\\n\\n$templates = array();\\n\\n\\/\\/ get all templates to process\\n$classname = \'FdmLayouts\';\\n$c = $modx->newQuery($classname);\\n$c->select($modx->getSelectColumns($classname, $classname));\\n$c->where(array(\'formtype\' => \'template\'));\\n$count = $modx->getCount($classname, $c);\\n$fdmdata = $modx->getCollection($classname, $c);\\n\\n\\/\\/ loop through these templates\\nif (count($fdmdata)) {\\n\\t\\/\\/ Format for export\\n\\tforeach($fdmdata as $fdmd) {\\n\\t\\t$fd = $fdmd->toArray();\\n\\t\\t$templates[$fd[\'id\']] = $fd[\'formfld_extra\'];\\n\\t}\\n}\\nunset($c, $fdmdata);\\n\\n\\/\\/ get all forms to process\\n$classname = \'FdmLayouts\';\\n$c = $modx->newQuery($classname);\\n$c->select($modx->getSelectColumns($classname, $classname));\\n$c->where(array(\'formtype\' => \'formit\'));\\n$c->where(array(\'formtype\' => \'formz\'),xPDOQuery::SQL_OR);\\n$count = $modx->getCount($classname, $c);\\n$fdmdata = $modx->getCollection($classname, $c);\\n\\n\\/\\/ set folder name to use\\n$savetofolder = date(\'Ymd_His\',time());\\n\\n\\/\\/ loop through these forms\\t\\nif (count($fdmdata)) {\\n\\t\\/\\/ Format for export\\n\\tforeach($fdmdata as $fdmd) {\\n\\t\\t$fd = $fdmd->toArray();\\n        if ($fd[\'inactive\']) continue;\\n\\t\\t$fields = array();\\n\\t\\t$fields[\'formid\'] = $fd[\'formid\'];\\n\\t\\t$fields[\'formname\'] = $fd[\'formname\']; \\n\\t\\t$fields[\'layoutid\'] = $fd[\'id\'];\\n\\t\\t$fields[\'template\'] = $fd[\'templateid\'];\\n\\t\\t$fields[\'autoexport\'] = true;\\n\\t\\t$lastautoexpto = $fd[\'lastautoexpto\'];\\n\\t\\tif (!empty($lastautoexpto)) $lastautoexpto = date(\'Y-m-d H:i:s\',strtotime($lastautoexpto) + 1);\\n\\t\\t$fields[\'startDate\'] = $lastautoexpto;\\n\\t\\t$fields[\'endDate\'] = \'\';\\n\\t\\t$fields[\'savetofile\'] = $fd[\'formname\'];\\n\\t    $fields[\'savetofolder\'] = $savetofolder;\\n\\t\\t$response = $modx->runProcessor(\'mgr\\/exportdata\', $fields, array(\'processors_path\' => $processorsPath));\\n\\t}\\n}","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/*\\n * fdmExportTask \\n *\\n * FormDataManager\\n *\\/\\n\\n\\/\\/ Check this functionality allowed - system setting\\n\\n$allowed = $this->modx->getOption(\'fdm_allow_autoexports\',null,0);\\nif (!$allowed) {\\n    echo \\"<html><title>FormDataManger Error<\\/title><body><h1>Permission Error<\\/h1><p>The FormDataManger auto export function is unavailable.<\\/p><\\/body><\\/html>\\";\\n    exit();\\n}\\n\\n\\/\\/ Load Class\\n\\nif (!isset($scriptProperties)) $scriptProperties = array();\\n$fdm = $modx->getService(\'formdatamanager\', \'FormDataManager\', $modx->getOption(\'formdatamanager.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/formdatamanager\\/\') . \'model\\/formdatamanager\\/\', $scriptProperties);\\nif (!($fdm instanceof FormDataManager)) return \'\';\\n\\n$opt = (isset($fdmRunOpts)) ? trim($fdmRunOpts) : \\"\\";\\nswitch ($opt) {\\n    case \\"-zip\\":\\n        $fdm->createZip();\\n        break;\\n    case \\"-rar\\":\\n        $fdm->createRar();\\n        break;\\n    default:\\n        \\n}\\n\\nif (!empty($opt)) return;\\n\\n$processorsPath = $modx->getOption(\'core_path\', null, MODX_CORE_PATH) .\'components\\/formdatamanager\\/processors\\/\';\\n\\n$templates = array();\\n\\n\\/\\/ get all templates to process\\n$classname = \'FdmLayouts\';\\n$c = $modx->newQuery($classname);\\n$c->select($modx->getSelectColumns($classname, $classname));\\n$c->where(array(\'formtype\' => \'template\'));\\n$count = $modx->getCount($classname, $c);\\n$fdmdata = $modx->getCollection($classname, $c);\\n\\n\\/\\/ loop through these templates\\nif (count($fdmdata)) {\\n\\t\\/\\/ Format for export\\n\\tforeach($fdmdata as $fdmd) {\\n\\t\\t$fd = $fdmd->toArray();\\n\\t\\t$templates[$fd[\'id\']] = $fd[\'formfld_extra\'];\\n\\t}\\n}\\nunset($c, $fdmdata);\\n\\n\\/\\/ get all forms to process\\n$classname = \'FdmLayouts\';\\n$c = $modx->newQuery($classname);\\n$c->select($modx->getSelectColumns($classname, $classname));\\n$c->where(array(\'formtype\' => \'formit\'));\\n$c->where(array(\'formtype\' => \'formz\'),xPDOQuery::SQL_OR);\\n$count = $modx->getCount($classname, $c);\\n$fdmdata = $modx->getCollection($classname, $c);\\n\\n\\/\\/ set folder name to use\\n$savetofolder = date(\'Ymd_His\',time());\\n\\n\\/\\/ loop through these forms\\t\\nif (count($fdmdata)) {\\n\\t\\/\\/ Format for export\\n\\tforeach($fdmdata as $fdmd) {\\n\\t\\t$fd = $fdmd->toArray();\\n        if ($fd[\'inactive\']) continue;\\n\\t\\t$fields = array();\\n\\t\\t$fields[\'formid\'] = $fd[\'formid\'];\\n\\t\\t$fields[\'formname\'] = $fd[\'formname\']; \\n\\t\\t$fields[\'layoutid\'] = $fd[\'id\'];\\n\\t\\t$fields[\'template\'] = $fd[\'templateid\'];\\n\\t\\t$fields[\'autoexport\'] = true;\\n\\t\\t$lastautoexpto = $fd[\'lastautoexpto\'];\\n\\t\\tif (!empty($lastautoexpto)) $lastautoexpto = date(\'Y-m-d H:i:s\',strtotime($lastautoexpto) + 1);\\n\\t\\t$fields[\'startDate\'] = $lastautoexpto;\\n\\t\\t$fields[\'endDate\'] = \'\';\\n\\t\\t$fields[\'savetofile\'] = $fd[\'formname\'];\\n\\t    $fields[\'savetofolder\'] = $savetofolder;\\n\\t\\t$response = $modx->runProcessor(\'mgr\\/exportdata\', $fields, array(\'processors_path\' => $processorsPath));\\n\\t}\\n}"}',
+        'guid' => 'ed2d594a0b77486d58a311905992ca49',
+        'native_key' => 1,
+        'signature' => 'e47ea5379e958190bef904f6ac59959e',
+      ),
+      '2a41e436bb51ecbf4fda5af54f07569a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"fdmViewExportFunctions","description":"FormDataManager helper snippet to provide extra functions when viewing\\/exporting form data.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n * fdmViewExportFunctions\\n *\\n * FormDataManager\\n *\\/\\n\\nclass FormDataManagerViewExportFunctions\\n{\\n \\n    public function fdmfunctionlist() {\\n        $afns = get_class_methods($this);\\n        $fns = array();\\n        foreach($afns as $fn) {\\n            \\/\\/ get the private function names\\n            if (substr($fn,0,1) == \\"_\\") $fns[] = substr($fn,1);\\n        }\\n        return $fns;\\n        \\n    }\\n    \\n    public function fdmdofunction($fn,$d) {\\n        \\/\\/ get available functions \\n        $afns = $this->fdmfunctionlist();\\n        \\/\\/ check the requested function is in list\\n        if (!in_array($fn,$afns)) return $d;\\n        $w = \'_\'.$fn;\\n        return ($this->$w($d));\\n    }\\n    \\n    private function _ShowAsY($fld) {\\n        if (empty($fld)) return \'N\';\\n        else return \'Y\';\\n    }\\n    \\n    private function _ShowAsYes($fld) {\\n        if (empty($fld)) return \'No\';\\n        else return \'Yes\';\\n    }\\n    \\n    private function _ShowAs1($fld) {\\n        if (empty($fld)) return 0;\\n        else return 1;\\n    }\\n    \\n    private function _ShowAsTrue($fld) {\\n        if (empty($fld)) return \'False\';\\n        else return \'True\';\\n    }\\n    \\n    private function _ShowAsUpper($fld) {\\n        if (empty($fld)) return \'\';\\n        else return strtoupper($fld);\\n    }\\n    \\n    private function _ShowAsLower($fld) {\\n        if (empty($fld)) return \'\';\\n        else return strtolower($fld);\\n    }\\n\\t\\n\\tprivate function _ShowAsYNBlank($fld) {\\n\\t\\t$fld = trim($fld);\\n\\t\\tif (empty($fv)) return \\"\\";\\n\\t\\t$fld = strtoupper($fld);\\n\\t\\tswitch ($fld) {\\n\\t\\t\\tcase \\"Y\\":\\n\\t\\t\\tcase \\"YES\\":\\n\\t\\t\\tcase \\"1\\":\\n\\t\\t\\t\\treturn \\"Y\\";\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\tcase \\"N\\":\\n\\t\\t\\tcase \\"NO\\":\\n\\t\\t\\tcase \\"0\\":\\n\\t\\t\\t\\treturn \\"N\\";\\n\\t\\t\\t\\tbreak;\\t\\t\\t\\t\\n\\t\\t}\\n\\t\\t\\/\\/ has content so take as positive\\n\\t\\treturn \\"Y\\";\\n    }\\n    \\n}\\n\\n$fdmVEF = new FormDataManagerViewExportFunctions();\\nreturn $fdmVEF;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/*\\n * fdmViewExportFunctions\\n *\\n * FormDataManager\\n *\\/\\n\\nclass FormDataManagerViewExportFunctions\\n{\\n \\n    public function fdmfunctionlist() {\\n        $afns = get_class_methods($this);\\n        $fns = array();\\n        foreach($afns as $fn) {\\n            \\/\\/ get the private function names\\n            if (substr($fn,0,1) == \\"_\\") $fns[] = substr($fn,1);\\n        }\\n        return $fns;\\n        \\n    }\\n    \\n    public function fdmdofunction($fn,$d) {\\n        \\/\\/ get available functions \\n        $afns = $this->fdmfunctionlist();\\n        \\/\\/ check the requested function is in list\\n        if (!in_array($fn,$afns)) return $d;\\n        $w = \'_\'.$fn;\\n        return ($this->$w($d));\\n    }\\n    \\n    private function _ShowAsY($fld) {\\n        if (empty($fld)) return \'N\';\\n        else return \'Y\';\\n    }\\n    \\n    private function _ShowAsYes($fld) {\\n        if (empty($fld)) return \'No\';\\n        else return \'Yes\';\\n    }\\n    \\n    private function _ShowAs1($fld) {\\n        if (empty($fld)) return 0;\\n        else return 1;\\n    }\\n    \\n    private function _ShowAsTrue($fld) {\\n        if (empty($fld)) return \'False\';\\n        else return \'True\';\\n    }\\n    \\n    private function _ShowAsUpper($fld) {\\n        if (empty($fld)) return \'\';\\n        else return strtoupper($fld);\\n    }\\n    \\n    private function _ShowAsLower($fld) {\\n        if (empty($fld)) return \'\';\\n        else return strtolower($fld);\\n    }\\n\\t\\n\\tprivate function _ShowAsYNBlank($fld) {\\n\\t\\t$fld = trim($fld);\\n\\t\\tif (empty($fv)) return \\"\\";\\n\\t\\t$fld = strtoupper($fld);\\n\\t\\tswitch ($fld) {\\n\\t\\t\\tcase \\"Y\\":\\n\\t\\t\\tcase \\"YES\\":\\n\\t\\t\\tcase \\"1\\":\\n\\t\\t\\t\\treturn \\"Y\\";\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\tcase \\"N\\":\\n\\t\\t\\tcase \\"NO\\":\\n\\t\\t\\tcase \\"0\\":\\n\\t\\t\\t\\treturn \\"N\\";\\n\\t\\t\\t\\tbreak;\\t\\t\\t\\t\\n\\t\\t}\\n\\t\\t\\/\\/ has content so take as positive\\n\\t\\treturn \\"Y\\";\\n    }\\n    \\n}\\n\\n$fdmVEF = new FormDataManagerViewExportFunctions();\\nreturn $fdmVEF;"}',
+        'guid' => '2dcc8cdf8fb12241d01d3e184b44f93d',
+        'native_key' => 2,
+        'signature' => '915d3539868260b200466af9063d3655',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'formdatamanager',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"formdatamanager-1.4.0-pl\\/modCategory\\/a92d4d0bc85967f0e8b5a00e20a9ec3b.transport.resolver.resolver","type":"php","name":"transport.resolver"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formdatamanager-1.4.0-pl\\/modCategory\\/a92d4d0bc85967f0e8b5a00e20a9ec3b\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"formdatamanager"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formdatamanager-1.4.0-pl\\/modCategory\\/a92d4d0bc85967f0e8b5a00e20a9ec3b\\/2\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"formdatamanager"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e15ed3e956b58759dcf3754c3a3614c4',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'a92d4d0bc85967f0e8b5a00e20a9ec3b',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"FormDataManager","rank":0}',
+);

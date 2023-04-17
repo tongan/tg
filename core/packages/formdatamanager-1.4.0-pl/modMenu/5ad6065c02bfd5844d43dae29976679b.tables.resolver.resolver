@@ -1,0 +1,66 @@
+<?php
+/**
+ * Creates the tables on install
+ *
+ * @package formdatamanager
+ * @subpackage build
+ */
+if ($object->xpdo) {
+    $modx =& $object->xpdo;	
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+        case xPDOTransport::ACTION_UPGRADE:
+
+            $modelPath = $modx->getOption('formdatamanager.core_path',null,$modx->getOption('core_path').'components/formdatamanager/').'model/';
+            $modx->addPackage('formdatamanager',$modelPath);
+
+            $manager = $modx->getManager();
+            $modx->setLogLevel(modX::LOG_LEVEL_ERROR);
+            $manager->createObjectContainer('FdmLayouts');
+            $modx->setLogLevel(modX::LOG_LEVEL_INFO);
+            break;
+
+		/* 
+		 * do not include unistall as fails due to model directory being deleted before this runs
+		 *
+		case xPDOTransport::ACTION_UNINSTALL:
+
+		$modx->log(xPDO::LOG_LEVEL_INFO, 'Removing database tables...');
+			$modelPath = $modx->getOption('formdatamanager.core_path', null, $modx->getOption('core_path').'components/formdatamanager/').'model/';
+			$modx->addPackage('formdatamanager', $modelPath);
+
+			$manager = $modx->getManager();
+			// to not report table removal in the console
+			$oldLogLevel = $modx->getLogLevel();
+			$modx->setLogLevel(0);
+			$manager->removeObjectContainer('FdmLayouts');
+			// set back console logging
+			$modx->setLogLevel($oldLogLevel);
+		break;
+		*/
+	}
+	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_UPGRADE:
+
+            $modelPath = $modx->getOption('formdatamanager.core_path',null,$modx->getOption('core_path').'components/formdatamanager/').'model/';
+            $modx->addPackage('formdatamanager',$modelPath);
+			
+			$tablename = $modx->getTableName('FdmLayouts');
+			$query = "SHOW COLUMNS FROM $tablename";
+			$result = $modx->query($query);
+			if (is_object($result)) {
+				$flddata = $result->fetchAll(PDO::FETCH_ASSOC);
+				$fc = 0;
+				foreach ($flddata as &$field) {
+					$fc++;
+				}
+				if ($fc <= 14) {
+					$modx->exec("ALTER TABLE {$modx->getTableName('FdmLayouts')} ADD `inactive` INT(1) unsigned NOT NULL default '0' AFTER `formname`");
+					$modx->exec("ALTER TABLE {$modx->getTableName('FdmLayouts')} ADD `templateid` INT(10) unsigned NOT NULL default '0' AFTER `formfld_extra`");
+					$modx->exec("ALTER TABLE {$modx->getTableName('FdmLayouts')} ADD `selectionfield` VARCHAR(100) NULL AFTER `formfld_extra`");
+				}
+			}
+			break;			
+	}
+}
+return true;
