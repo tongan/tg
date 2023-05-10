@@ -47,6 +47,12 @@
     'path' => '/home/zgqcw4omge04/public_html/core/components/breadcrumb/',
     'assets_path' => '',
   ),
+  'cacheclear' => 
+  array (
+    'name' => 'cacheclear',
+    'path' => '/home/zgqcw4omge04/public_html/core/components/cacheclear/',
+    'assets_path' => '/home/zgqcw4omge04/public_html/assets/components/cacheclear/',
+  ),
   'captcha' => 
   array (
     'name' => 'captcha',

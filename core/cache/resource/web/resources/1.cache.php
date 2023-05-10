@@ -591,7 +591,7 @@
     <script src="theme/js/script.js"></script>
   </body>
 </html>',
-    '_isForward' => false,
+    '_isForward' => true,
   ),
   'contentType' => 
   array (

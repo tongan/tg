@@ -1,2 +1,2 @@
 <?php
-return '/Filesystem/manager';
+return '/Filesystem/global.transkorglobal.com';

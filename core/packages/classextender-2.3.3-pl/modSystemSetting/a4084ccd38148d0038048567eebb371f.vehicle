@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c2ca4d7e785fe682ffbbf53a38fa057f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a4084ccd38148d0038048567eebb371f',
+  'native_key' => 'ce_autoload_directories',
+  'object' => '{"key":"ce_autoload_directories","value":"","xtype":"textfield","namespace":"classextender","area":"classextender","editedon":null,"name":"setting_ce_autoload_directories","description":"setting_ce_autoload_directories_desc"}',
+);

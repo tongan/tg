@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'ajaxupload',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '70541df5941c1816e2c609badc5f2d31',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '06862e879afe8bc309d107a405f9a9fc',
+  'native_key' => 'ajaxupload.image_tpl',
+  'object' => '{"key":"ajaxupload.image_tpl","value":"tplAjaxUploadImage","xtype":"textfield","namespace":"ajaxupload","area":"site","editedon":null}',
+);

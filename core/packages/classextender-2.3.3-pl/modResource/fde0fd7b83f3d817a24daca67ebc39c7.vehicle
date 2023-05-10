@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6b225a7eb6238ef42a0c19d0e8fce5eb',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => 'fde0fd7b83f3d817a24daca67ebc39c7',
+  'native_key' => 6,
+  'object' => '{"id":6,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender Register PostHook","longtitle":"","description":"","alias":"classextender-register-posthook","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<h3>RegisterPostHook<\\/h3>\\r\\n\\r\\n<!-- Set the &redirectTo property to the ID of\\r\\n     your \\"Thanks for Registering\\" page -->\\r\\n\\r\\n<!-- Note: The <code>activation<\\/code> property works the opposite of the\\r\\nway you might expect it to. If it\'s <code>1<\\/code> (<code>true<\\/code>),\\r\\nthe created user\'s `modUser` record will be saved as inactive, and the\\r\\nuser will have to respond to an email to become an active user, or the\\r\\nactive field will have to be set manually.\\r\\n\\r\\nIf it\'s <code>0<\\/code> (<code>false<\\/code>, the user will be saved as an active user. -->\\r\\n\\r\\n<h3>[[+error.message]]<\\/h3>\\r\\n\\r\\n[[!Register?\\r\\n    &submitVar=`login-register-btn`\\r\\n    &activation=`0`\\r\\n    &successMsg=`Thanks for registering`\\r\\n    &useExtended=`0`\\r\\n    &postHooks=`ExtUserRegisterPostHook`\\r\\n    &redirectTo=`99999`\\r\\n    &errTpl=`<span class=\\"error\\" style=\\"color:#c80000;\\">[[+error]]<\\/span>`\\r\\n]]\\r\\n\\r\\n[[$ExtUserRegisterFormTpl]]\\r\\n\\r\\n","richtext":0,"template":0,"menuindex":0,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

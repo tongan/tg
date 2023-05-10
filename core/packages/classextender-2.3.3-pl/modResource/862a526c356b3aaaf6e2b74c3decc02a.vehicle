@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'classextender',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1c4055578192bde781a4ed8feab7ad3f',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '862a526c356b3aaaf6e2b74c3decc02a',
+  'native_key' => 7,
+  'object' => '{"id":7,"type":"document","contentType":"text\\/html","pagetitle":"ClassExtender Update Profile","longtitle":"","description":"","alias":"class-extender-update-profile","alias_visible":1,"link_attributes":"","published":0,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<!-- Important: User must be logged in to the front end!\\r\\n     Login extra must be installed -->\\r\\n\\r\\n[[!RequireLogin?\\r\\n    &loggedInChunk=`ExtUpdateProfileLoggedIn`\\r\\n    &notLoggedInChunk=`ExtUpdateProfileNotLoggedIn`\\r\\n    &notLoggedInMsg = `Please Log in`\\r\\n    &cssFile =`[[++assets_url]]components\\/classextender\\/css\\/classextender.css`\\r\\n]]","richtext":0,"template":0,"menuindex":1,"searchable":1,"cacheable":1,"createdby":1,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);
